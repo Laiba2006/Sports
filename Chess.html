@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess.info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    
+</head>
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="Index.html" style="text-decoration: none;">
+      <img src="https://img.icons8.com/ios-filled/50/FA5252/tennis-ball.png" alt="Tennis Ball Icon" />
+      <span style="margin-left: 8px; display: flex; align-items: center; cursor: pointer; transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.1)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        <span style="color: #FFA500; font-weight: bold; font-size: 2rem; letter-spacing: 1px; text-transform: uppercase;">
+          Sportsinfo
+        </span>
+        <span style="color: #ffffff; font-size: 2rem; font-weight: 600;">
+          .com
+        </span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sports
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="sportsDropdown">
+            <li><a class="dropdown-item" href="football.html">Football</a></li>
+            <li><a class="dropdown-item" href="Tennis.html">Tennis</a></li>
+            <li><a class="dropdown-item" href="Judo.html">Judo</a></li>
+            <li><a class="dropdown-item" href="Motorcycle Racing.html">Motorcycle Racing</a></li>
+            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+            <li><a class="dropdown-item" href="Golf.html">Golf</a></li>
+            <li><a class="dropdown-item" href="Chess.html">Chess</a></li>
+            <li><a class="dropdown-item" href="Billiards.html">Billiards</a></li>
+            <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
+            <li><a class="dropdown-item" href="Swimming.html">Swimming</a></li>
+            <li><a class="dropdown-item" href="Athletics.html">Athletics</a></li>
+            <li><a class="dropdown-item" href="Basketball.html">Basketball</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Guestbook.html">Guestbook</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3" role="search">
+        <select id="sportSearch" class="form-select select2" aria-label="Search Sports">
+          <option value="">Search Sports...</option>
+          <option value="football.html">Football</option>
+          <option value="Tennis.html">Tennis</option>
+          <option value="Judo.html">Judo</option>
+          <option value="Motorcycle Racing.html">Motorcycle Racing</option>
+          <option value="volleyball.html">Volleyball</option>
+          <option value="Golf.html">Golf</option>
+          <option value="Chess.html">Chess</option>
+          <option value="Billiards.html">Billiards</option>
+          <option value="Badminton.html">Badminton</option>
+          <option value="Swimming.html">Swimming</option>
+          <option value="Athletics.html">Athletics</option>
+          <option value="Basketball.html">Basketball</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</nav>
+      <!--End Navbar-->
+      <!-- hero-section--> 
+      <header class="hero-section text-white d-flex align-items-center justify-content-center position-relative"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('chess2.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;"
+  data-aos="fade-up" data-aos-duration="1500">
+
+  <h1 style="font-size: 3.5rem; color: #fff; line-height: 1.3; font-style: italic; margin-bottom: 20px;" data-aos="zoom-in" data-aos-delay="300">
+    Welcome to the<br>
+    <span style="font-weight: bold; font-size: 4.2rem; letter-spacing: 2px; color: #FFA500; text-transform: uppercase;">
+    Chess World
+    </span>
+  </h1>
+
+  <p style="font-size: 1.2rem; max-width: 600px; color: #ddd;" data-aos="fade-up" data-aos-delay="600">
+    Chess is a strategic board game played between two players, aiming to checkmate the opponent's king using tactical moves and planning.
+  </p>
+
+  <a href="Chess.html" style="margin-top: 30px; padding: 12px 30px; background-color: #FFA500; color: #000; font-weight: bold; border-radius: 8px; font-size: 1.1rem;" data-aos="fade-up" data-aos-delay="900">
+    Explore Now
+  </a>
+
+   </header>
+<!--End hero-section--> 
+<!--Introduction-->
+<section style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">  
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Chess 
+      </h2>
+      <p class="mt-3 fs-5">Chess is a two-player mind game that involves strategy, planning, and skill to capture the opponent's king.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">Introduction of chess</h3>
+        <p>Chess is a two-player strategy game played on a 64-square board. The goal is to checkmate the opponent's king while using tactical moves and planning. It is known for enhancing critical thinking and is played worldwide.</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://www.pngmart.com/files/16/Battle-Chess-Pieces-Transparent-Background.png" class="img-fluid" alt="chess Player" style="max-height: 300px;">
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">How Many Players Play the Game?</h3>
+        <p>
+           Chess is a two-player game, where each player controls 16 pieces, including a king, queen, rooks, knights, bishops, and pawns, all with different movement patterns. The game is played on a square board with 64 squares.
+        </p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://pngimg.com/uploads/chess/chess_PNG8454.png" class="img-fluid" alt=" Chess" style="max-height: 300px;">
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-right">
+      <h3 class="text-warning">Is it a team game?</h3>
+      <p>No, chess is not a team game. It is a game of individual strategy and skill, where two opponents compete against each other. Each player is responsible for their own moves and tactics to checkmate the opponent's king and win the game.</p>
+    </div>
+    <!-- End Introduction-->
+    <!-- Strategies -->
+    <div class="my-5 text-center" data-aos="fade-up">
+      <h2 class="display-4 fw-bold d-inline-block" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+        Strategies of the Game
+      </h2>
+    </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">♟️ Control the Center</h5>
+              <p class="card-text">
+               Control the center of the board for greater mobility and influence over the game.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🛡️ King Safety</h5>
+              <p class="card-text">
+               Protect your king by castling early and keeping it safe from attacks.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">♘ Develop Your Pieces</h5>
+              <p class="card-text">
+               Move your knights and bishops early to improve piece coordination and control important squares.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🎯 Tactical Awareness</h5>
+              <p class="card-text">
+              Stay alert to tactics like forks, pins, and discovered attacks to gain material advantage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--End Strategies -->
+    <!--Rules -->
+    <div class="container my-5 card bg-dark text-white border-warning shadow-lg" data-aos="flip-left">
+        <div class="card-body px-4 px-md-5">
+          <div class="my-4 text-center" data-aos="fade-up">
+            <h2 class="display-4 fw-bold d-inline-block"
+                style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+              Rule of the game
+            </h2>
+          </div>
+          <div class="mx-auto" style="max-width: 800px;">
+            <h4 class="text-warning">Objective</h4>
+           <p>
+              The main goal in chess is to checkmate your opponent's king, meaning the king is under attack and has no legal move to escape capture.
+           </p>
+          </div>
+            <div class="mx-auto" style="max-width: 800px;">
+              <h4 class="text-warning">The Chessboard</h4>
+              <p>
+               Chess is played on a square board consisting of 64 squares arranged in an 8x8 grid, alternating between light and dark squares.
+             </p>
+              </div>
+              <div class="mx-auto" style="max-width: 800px;">
+                <h4 class="text-warning">Pieces and Their Movement</h4>
+                <p>Each player begins with 16 pieces:</p>
+                 <ul>
+                     <li> <strong>King:</strong> Moves one square in any direction.</li>
+                    <li><strong>Queen:</strong> Moves any number of squares in any direction (vertically, horizontally, or diagonally).</li>
+                    <li> <strong>Rook:</strong> Moves any number of squares horizontally or vertically.</li>
+                      <li> <strong>Bishop:</strong> Moves diagonally any number of squares.</li>
+                      <li><strong>Knight:</strong> Moves in an "L" shape: two squares in one direction and then one square perpendicular.</li>
+                     <li><strong>Pawn:</strong> Moves forward one square but captures diagonally. On its first move, a pawn can move two squares forward.</li>
+    </ul>
+                </div>
+                <div class="mx-auto" style="max-width: 800px;">
+                  <h4 class="text-warning">Castling</h4>
+                  <p>A special move where the king moves two squares toward a rook, and the rook jumps over the king to the next square. This move can only be done if:</p>
+                  <ul>
+                    <li>Neither the king nor the rook has moved.</li>
+                    <li>There are no pieces between them.</li>
+                    <li>The king is not in check, nor does it pass through or land in a square that is under attack.</li>
+                   </ul> 
+                 </div>
+                  <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">En Passant</h4>
+                    <p>If a pawn moves two squares forward from its starting position and lands next to an opponent's pawn, the opponent can capture it as if it had only moved one square forward. This move must be made immediately after the opponent’s pawn advance.</p>
+                  </div>
+                   <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">Promotion</h4>
+                    <p>When a pawn reaches the opponent’s back rank (8th rank for white, 1st rank for black), it can be promoted to a queen, rook, bishop, or knight, typically to a queen.</p>
+                  </div>
+                   <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">Check and Checkmate</h4>
+                    <ul>
+                        <li>The king is under direct threat. The player must make a move to remove the check.</li>
+                        <li> The king is in check, and there is no legal move to escape. The game ends in victory for the attacking player.</li>
+                    </ul>
+                  </div>
+                  <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">Draw</h4>
+                    <p>The game can end in a draw under various circumstances, such as:</p>
+                    <ul>
+                        <li>The player to move has no legal move and their king is not in check.</li>
+                        <li>Neither player has enough pieces to checkmate. </li>
+                        <li>Both players agree to a draw.</li>
+                    </ul>
+                  </div>
+                
+      </div>
+    </div>
+    <!-- End Rules -->
+    <!-- Important Facts-->
+<div style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Important Facts About Chess
+      </h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Ancient Origins</h5>
+           <p>
+          Chess originated in India around the 6th century as a game called Chaturanga.
+           </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">International Game</h5>
+           <p>Chess is played worldwide and is recognized as a sport by the International Olympic Committee.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">World Chess Federation (FIDE)</h5>
+            <p>
+              FIDE governs international chess competitions and was established in 1924.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Brain Booster</h5>
+            <p>
+              Playing chess improves memory, concentration, and strategic thinking skills.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">First World Champion</h5>
+            <p>
+              Wilhelm Steinitz became the first official World Chess Champion in 1886.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Fast Versions</h5>
+            <p>
+               Blitz, Bullet, and Rapid are faster versions of traditional chess with strict time controls.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ <!-- End Important Facts-->
+
+<!-- Statistics / Records -->
+<div class="container my-5" data-aos="zoom-in">
+  <div class="card bg-dark border-warning shadow-lg">
+    <div class="card-body px-4 px-md-5">
+      <div class="my-4 text-center">
+        <h2 class="display-4 fw-bold d-inline-block"
+            style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+          Statistics / Records
+        </h2>
+      </div>
+      <div class="mx-auto text-white" style="max-width: 800px;">
+        <h4 class="text-warning">Longest Chess Game</h4>
+       <p>
+       The longest official chess game lasted 269 moves between Ivan Nikolic and Goran Arsovic in 1989, ending in a draw.
+       </p>
+      </div>
+        <div class="mx-auto text-white " style="max-width: 800px;">
+          <h4 class="text-warning">Fastest Checkmate</h4>
+          <p>
+            Known as Fool's Mate, the fastest checkmate can happen in just 2 moves.
+         </p>
+          </div>
+          <div class="mx-auto text-white" style="max-width: 800px;">
+            <h4 class="text-warning">Youngest Grandmaster</h4>
+            <p>
+                Abhimanyu Mishra from the USA became the youngest Grandmaster at the age of 12 years and 4 months in 2021.
+            </p>
+            </div>
+            <div class="mx-auto text-white" style="max-width: 800px;">
+              <h4 class="text-warning">Most World Titles</h4>
+              <p>
+               Emanuel Lasker held the World Chess Championship title for 27 years (1894–1921) — the longest reign in chess history.
+              </p> 
+             </div>
+              <div class="mx-auto text-white" style="max-width: 800px;">
+                <h4 class="text-warning">Highest Rated Player</h4>
+                <p>
+                   Magnus Carlsen achieved the highest FIDE rating ever of 2882 in 2014.
+                </p>
+              </div>
+              <div class="mx-auto text-white" style="max-width: 800px;">
+                <h4 class="text-warning">Most Moves Without a Pawn Move or Capture</h4>
+                <p>
+                   A record of 100 moves was set without a single pawn move or capture in a competitive game.
+                </p> 
+              </div>
+      </div>
+   </div>
+</div>
+<!-- End Statistics / Records -->
+<!-- Countries That Play This Game -->
+<div class="container my-5" data-aos="fade-up">
+  <div class="card bg-dark text-white border-warning shadow-lg">
+    <div class="card-body text-center">
+      <h2 class="display-5 fw-bold text-warning mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+        🌍 Countries That Play Chess
+      </h2>
+      <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="Russia.jpg" class="card-img-top rounded" alt="Brazil Flag">
+            <div class="card-body">
+              <h5 class="card-title">Russia</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="United States.jpeg" class="card-img-top rounded" alt="France Flag">
+            <div class="card-body">
+              <h5 class="card-title">United States</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="china.jpeg" class="card-img-top rounded" alt="Germany Flag">
+            <div class="card-body">
+              <h5 class="card-title">China</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="Norway.jpg" class="card-img-top rounded" alt="Argentina Flag">
+            <div class="card-body">
+              <h5 class="card-title">Norway </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Countries That Play This Game -->
+<!-- Famous Chess Players -->
+<div class="container mt-5">
+  <h2 class="text-center text-warning mb-4">♟️ Famous Chess Players</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#carlsenModal" style="cursor:pointer;">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.suDnSu6KNF9alnTVuHkVcwHaEK&pid=Api&P=0&h=220" style="width: 100%; height: 250px; object-fit: cover;" class="card-img-top" alt="Magnus Carlsen">
+        <div class="card-body">
+          <h5 class="card-title">Magnus Carlsen</h5>
+          <p class="card-text">World Champion | Norway</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#kasparovModal" style="cursor:pointer;">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.Gas39YTzbKbF9HAk4GzDowHaEn&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;" alt="Garry Kasparov">
+        <div class="card-body">
+          <h5 class="card-title">Garry Kasparov</h5>
+          <p class="card-text">Legendary Grandmaster | Russia</p>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#fischerModal" style="cursor:pointer;">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.Vmx8ZlNTTMLKVqAxYVIsRgHaE_&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;" alt="Bobby Fischer">
+        <div class="card-body">
+          <h5 class="card-title">Bobby Fischer</h5>
+          <p class="card-text">World Champion | USA</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="modal fade" id="carlsenModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.suDnSu6KNF9alnTVuHkVcwHaEK&pid=Api&P=0&h=220" class="img-fluid rounded" alt="Magnus Carlsen">
+      <h4 class="mt-3">Magnus Carlsen</h4>
+      <p><strong>Country:</strong> Norway</p>
+      <p><strong>Date of Birth:</strong> November 30, 1990</p>
+      <p><strong>Title:</strong> World Champion (2013–2023)</p>
+      <p><strong>Rating Record:</strong> Highest Elo Rating: 2882</p>
+      <p><strong>Achievements:</strong> Multiple time Rapid & Blitz Champion</p>
+      <p><strong>Style:</strong> Positional Genius, Endgame Master</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="kasparovModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.Gas39YTzbKbF9HAk4GzDowHaEn&pid=Api&P=0&h=220" class="img-fluid rounded" alt="Garry Kasparov">
+      <h4 class="mt-3">Garry Kasparov</h4>
+      <p><strong>Country:</strong> Russia</p>
+      <p><strong>Date of Birth:</strong> April 13, 1963</p>
+      <p><strong>Title:</strong> World Champion (1985–2000)</p>
+      <p><strong>Achievements:</strong> Held No. 1 ranking for 255 months</p>
+      <p><strong>Famous Match:</strong> Deep Blue vs Kasparov</p>
+      <p><strong>Style:</strong> Deep Preparation, Aggressive Play</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="fischerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.Vmx8ZlNTTMLKVqAxYVIsRgHaE_&pid=Api&P=0&h=220" class="img-fluid rounded" alt="Bobby Fischer">
+      <h4 class="mt-3">Bobby Fischer</h4>
+      <p><strong>Country:</strong> United States</p>
+      <p><strong>Date of Birth:</strong> March 9, 1943</p>
+      <p><strong>Title:</strong> World Champion (1972–1975)</p>
+      <p><strong>Historic Win:</strong> Defeated Boris Spassky in 1972</p>
+      <p><strong>Style:</strong> Deep Opening Knowledge, Brilliant Tactics</p>
+    </div>
+  </div>
+</div>
+<!-- End Famous Chess Players -->
+
+</section>
+    
+    <!--  Start Footer -->
+  <footer style="background: url('Billiards 1.jpeg') no-repeat center center/cover; background-color: #111; color: white; padding-top: 40px; padding-bottom: 20px; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.8); z-index: 1;"></div>
+
+  <div class="container-fluid" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <span class="text-warning"  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" style="font-size: 28px; font-weight: bold;">Sportsinfo</span>
+        <span style="font-size: 28px; font-weight: bold; color: white;">.com</span>
+        <p>Your hub for every game, every goal, every glory.</p>
+        <div>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-facebook"></i></a>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 20px; transition: transform 0.3s;"> <i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-weight: bold; margin-bottom: 20px;">Quick Links</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Home</a></li>
+          <li><a href="about.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">About Us</a></li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Contact</a></li>
+          <li><a href="guestbook.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Guestbook</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" style="font-weight: bold; margin-bottom: 20px;">Popular Sports</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="football.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Football</a></li>
+          <li><a href="Basketball.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Basketball</a></li>
+          <li><a href="Tennis.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Tennis</a></li>
+          <li><a href="Golf.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Golf</a></li>
+          <li><a href="Motorcycle Racing.html" style="color: white; text-decoration: none;">Motorcycle Racing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" style="font-weight: bold; margin-bottom: 20px;">Contact Info</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px;"><i class="bi bi-geo-alt-fill me-2"></i> 123 Sports Ave, Infocity</li>
+          <li style="margin-bottom: 8px;"><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> info@sportsinfo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0;">
+
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+       <p style="margin: 0;">&copy; 2025 SportsInfo.com — Your Game, Our Passion.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p style="margin: 0;">A product of <a href="#" style="color: white; text-decoration: underline;">Infocom Corporation</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+      <!-- End Footer Section -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         
+         AOS.init();
+          document.getElementById("sportSearch").addEventListener("change", function () {
+          var selected = this.value;
+          if (selected) {
+          window.location.href = selected;
+         }
+       });
+      </script>
+    
+</body>
+</html>

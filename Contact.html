@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+  <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="Index.html" style="text-decoration: none;">
+      <img src="https://img.icons8.com/ios-filled/50/FA5252/tennis-ball.png" alt="Tennis Ball Icon" />
+      <span style="margin-left: 8px; display: flex; align-items: center; cursor: pointer; transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.1)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        <span style="color: #FFA500; font-weight: bold; font-size: 2rem; letter-spacing: 1px; text-transform: uppercase;">
+          Sportsinfo
+        </span>
+        <span style="color: #ffffff; font-size: 2rem; font-weight: 600;">
+          .com
+        </span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sports
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="sportsDropdown">
+            <li><a class="dropdown-item" href="football.html">Football</a></li>
+            <li><a class="dropdown-item" href="Tennis.html">Tennis</a></li>
+            <li><a class="dropdown-item" href="Judo.html">Judo</a></li>
+            <li><a class="dropdown-item" href="Motorcycle Racing.html">Motorcycle Racing</a></li>
+            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+            <li><a class="dropdown-item" href="Golf.html">Golf</a></li>
+            <li><a class="dropdown-item" href="Chess.html">Chess</a></li>
+            <li><a class="dropdown-item" href="Billiards.html">Billiards</a></li>
+            <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
+            <li><a class="dropdown-item" href="Swimming.html">Swimming</a></li>
+            <li><a class="dropdown-item" href="Athletics.html">Athletics</a></li>
+            <li><a class="dropdown-item" href="Basketball.html">Basketball</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Guestbook.html">Guestbook</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3" role="search">
+        <select id="sportSearch" class="form-select select2" aria-label="Search Sports">
+          <option value="">Search Sports...</option>
+          <option value="football.html">Football</option>
+          <option value="Tennis.html">Tennis</option>
+          <option value="Judo.html">Judo</option>
+          <option value="Motorcycle Racing.html">Motorcycle Racing</option>
+          <option value="volleyball.html">Volleyball</option>
+          <option value="Golf.html">Golf</option>
+          <option value="Chess.html">Chess</option>
+          <option value="Billiards.html">Billiards</option>
+          <option value="Badminton.html">Badminton</option>
+          <option value="Swimming.html">Swimming</option>
+          <option value="Athletics.html">Athletics</option>
+          <option value="Basketball.html">Basketball</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</nav>
+<div style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+   <div class="container my-5 contact-section card bg-dark text-white border-warning shadow-lg" >
+  <h2 class="text-center text-warning mb-4">Contact Us</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h5 class="text-primary">Our Address</h5>
+      <p><strong>Company Name:</strong> Sportsinfo.com</p>
+      <p><strong>Address:</strong> 123 Main Street, Landhi, Karachi, Pakistan</p>
+      <p><strong>Email:</strong> 
+        <a href="mailto:info@sports.com" class="text-decoration-none">info@sports.com</a>
+      </p>
+      <h6 class="mt-4">Find us on Map</h6>
+      <div id="map"></div>
+    </div>
+
+    <div class="col-md-6">
+      <h5 class="text-primary">Send Us a Message</h5>
+      <form id="contactForm">
+        <div class="mb-3">
+          <label for="userName" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="userName" required pattern="^[A-Za-z ]{3,}$" title="Name should be at least 3 letters">
+        </div>
+        <div class="mb-3">
+          <label for="userEmail" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="userEmail" required>
+        </div>
+        <div class="mb-3">
+          <label for="userMessage" class="form-label">Message</label>
+          <textarea class="form-control" id="userMessage" rows="4" required minlength="10" placeholder="Write at least 10 characters"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+ <footer style="background: url('Billiards 1.jpeg') no-repeat center center/cover; background-color: #111; color: white; padding-top: 40px; padding-bottom: 20px; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.8); z-index: 1;"></div>
+
+  <div class="container-fluid" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <span class="text-warning"  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" style="font-size: 28px; font-weight: bold;">Sportsinfo</span>
+        <span style="font-size: 28px; font-weight: bold; color: white;">.com</span>
+        <p>Your hub for every game, every goal, every glory.</p>
+        <div>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-facebook"></i></a>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 20px; transition: transform 0.3s;"> <i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-weight: bold; margin-bottom: 20px;">Quick Links</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Home</a></li>
+          <li><a href="about.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">About Us</a></li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Contact</a></li>
+          <li><a href="guestbook.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Guestbook</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" style="font-weight: bold; margin-bottom: 20px;">Popular Sports</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="football.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Football</a></li>
+          <li><a href="Basketball.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Basketball</a></li>
+          <li><a href="Tennis.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Tennis</a></li>
+          <li><a href="Golf.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Golf</a></li>
+          <li><a href="Motorcycle Racing.html" style="color: white; text-decoration: none;">Motorcycle Racing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" style="font-weight: bold; margin-bottom: 20px;">Contact Info</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px;"><i class="bi bi-geo-alt-fill me-2"></i> 123 Sports Ave, Infocity</li>
+          <li style="margin-bottom: 8px;"><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> info@sportsinfo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0;">
+
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+       <p style="margin: 0;">&copy; 2025 SportsInfo.com — Your Game, Our Passion.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p style="margin: 0;">A product of <a href="#" style="color: white; text-decoration: underline;">Infocom Corporation</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  document.getElementById("sportSearch").addEventListener("change", function () {
+   var selected = this.value;
+    if (selected) {
+     window.location.href = selected;
+    }
+  });
+  var map = L.map('map').setView([24.8506, 67.2066], 13); 
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker([24.8506, 67.2066]).addTo(map)
+    .bindPopup('WebTech Solutions')
+    .openPopup();
+
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = document.getElementById("userName").value.trim();
+    const email = document.getElementById("userEmail").value.trim();
+    const message = document.getElementById("userMessage").value.trim();
+
+    if(name.length < 3 || !/^[A-Za-z ]+$/.test(name)){
+      Swal.fire("Invalid Name", "Please enter a valid name with at least 3 letters.", "error");
+      return;
+    }
+
+    if(!email.match(/^\S+@\S+\.\S+$/)){
+      Swal.fire("Invalid Email", "Please enter a valid email address.", "error");
+      return;
+    }
+
+    if(message.length < 10){
+      Swal.fire("Message Too Short", "Please write at least 10 characters in your message.", "error");
+      return;
+    }
+
+    Swal.fire("Thank You!", "Your message has been sent successfully!", "success");
+    document.getElementById("contactForm").reset();
+  });
+</script>
+
+</body>
+</html>

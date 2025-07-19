@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football.info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    
+</head>
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="Index.html" style="text-decoration: none;">
+      <img src="https://img.icons8.com/ios-filled/50/FA5252/tennis-ball.png" alt="Tennis Ball Icon" />
+      <span style="margin-left: 8px; display: flex; align-items: center; cursor: pointer; transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.1)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        <span style="color: #FFA500; font-weight: bold; font-size: 2rem; letter-spacing: 1px; text-transform: uppercase;">
+          Sportsinfo
+        </span>
+        <span style="color: #ffffff; font-size: 2rem; font-weight: 600;">
+          .com
+        </span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sports
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="sportsDropdown">
+            <li><a class="dropdown-item" href="football.html">Football</a></li>
+            <li><a class="dropdown-item" href="Tennis.html">Tennis</a></li>
+            <li><a class="dropdown-item" href="Judo.html">Judo</a></li>
+            <li><a class="dropdown-item" href="Motorcycle Racing.html">Motorcycle Racing</a></li>
+            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+            <li><a class="dropdown-item" href="Golf.html">Golf</a></li>
+            <li><a class="dropdown-item" href="Chess.html">Chess</a></li>
+            <li><a class="dropdown-item" href="Billiards.html">Billiards</a></li>
+            <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
+            <li><a class="dropdown-item" href="Swimming.html">Swimming</a></li>
+            <li><a class="dropdown-item" href="Athletics.html">Athletics</a></li>
+            <li><a class="dropdown-item" href="Basketball.html">Basketball</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Guestbook.html">Guestbook</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3" role="search">
+        <select id="sportSearch" class="form-select select2" aria-label="Search Sports">
+          <option value="">Search Sports...</option>
+          <option value="football.html">Football</option>
+          <option value="Tennis.html">Tennis</option>
+          <option value="Judo.html">Judo</option>
+          <option value="Motorcycle Racing.html">Motorcycle Racing</option>
+          <option value="volleyball.html">Volleyball</option>
+          <option value="Golf.html">Golf</option>
+          <option value="Chess.html">Chess</option>
+          <option value="Billiards.html">Billiards</option>
+          <option value="Badminton.html">Badminton</option>
+          <option value="Swimming.html">Swimming</option>
+          <option value="Athletics.html">Athletics</option>
+          <option value="Basketball.html">Basketball</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</nav>
+      <!--End Navbar-->
+      <!-- hero-section--> 
+      <header class="hero-section text-white d-flex align-items-center justify-content-center position-relative"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Football 2.jpeg'); background-size: cover; background-position: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;"
+  data-aos="fade-up" data-aos-duration="1500">
+
+  <h1 style="font-size: 3.5rem; color: #fff; line-height: 1.3; font-style: italic; margin-bottom: 20px;" data-aos="zoom-in" data-aos-delay="300">
+    Welcome to the<br>
+    <span style="font-weight: bold; font-size: 4.2rem; letter-spacing: 2px; color: #FFA500; text-transform: uppercase;">
+     Football World
+    </span>
+  </h1>
+
+  <p style="font-size: 1.2rem; max-width: 600px; color: #ddd;" data-aos="fade-up" data-aos-delay="600">
+    Football is a team sport played between two teams of eleven players, where the objective is to score goals by getting the ball into the opposing team's net.
+  </p>
+
+  <a href="football.html" style="margin-top: 30px; padding: 12px 30px; background-color: #FFA500; color: #000; font-weight: bold; border-radius: 8px; font-size: 1.1rem;" data-aos="fade-up" data-aos-delay="900">
+    Explore Now
+  </a>
+
+   </header>
+<!--End hero-section--> 
+<!--Introduction-->
+<section style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">  
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Football
+      </h2>
+      <p class="mt-3 fs-5">The beautiful game of strength, strategy, and unstoppable passion.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">Introduction of Football</h3>
+        <p>Football is a globally celebrated sport of strength, strategy, and spirit, where two teams of eleven players battle on the field, aiming to conquer the game through coordination, precision, and sheer passion.</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://www.pngmart.com/files/22/Football-Player-PNG-Isolated-HD.png" class="img-fluid" alt="Football Player" style="max-height: 300px;">
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">How Many Players Play the Game?</h3>
+        <p>Football is played between two teams of eleven players each, including one goalkeeper and ten outfield players—defenders, midfielders, and forwards.</p>
+      </div>
+      
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://images.squarespace-cdn.com/content/v1/60243b07bc9acd634d9a966e/1613077762488-ZB8M6FGTQZ5EWXLWD8RR/PNGPIX-COM-Football-PNG-Transparent-Image.png?format=1500w" class="img-fluid" alt="Football" style="max-height: 200px;">
+      </div>
+    </div>
+    <div class="col-md-6" data-aos="fade-right">
+      <h3 class="text-warning">Is it a team game?</h3>
+      <p>Yes, football is a team game. It is played between two teams, each consisting of 11 players, and requires teamwork and coordination to succeed.</p>
+    </div>
+<!-- End Introduction-->
+    <!-- Strategies -->
+    <div class="my-5 text-center" data-aos="fade-up">
+      <h2 class="display-4 fw-bold d-inline-block" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+        Strategies of the Game
+      </h2>
+    </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">⚽ Attacking Play</h5>
+              <p class="card-text">Focuses on scoring by creating opportunities with quick passes and accurate shooting.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🛡️ Defensive Play</h5>
+              <p class="card-text">Emphasizes blocking the opponent’s attempts using formations like 4-4-2 or 5-3-2.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">⚡ Counter-Attack</h5>
+              <p class="card-text">Absorbs pressure, then attacks quickly after winning possession.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🔁 Possession Play</h5>
+              <p class="card-text">Keeps ball control to wear down the opponent and create scoring chances.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--End Strategies -->
+    <!--Rules -->
+    <div class="container my-5 card bg-dark text-white border-warning shadow-lg" data-aos="flip-left">
+        <div class="card-body px-4 px-md-5">
+          <div class="my-4 text-center" data-aos="fade-up">
+            <h2 class="display-4 fw-bold d-inline-block"
+                style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+              Rule of the game
+            </h2>
+          </div>
+          <div class="mx-auto" style="max-width: 800px;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent text-white border-0">
+                <strong>Duration:</strong> A football match is 90 minutes long, divided into two halves of 45 minutes with a 15-minute halftime break.
+              </li>
+              <li class="list-group-item bg-transparent text-white border-0">
+                <strong>Offside Rule:</strong> A player is offside if they are nearer to the opponent’s goal line than both the ball and the second-last defender when the ball is played to them.
+              </li>
+              <li class="list-group-item bg-transparent text-white border-0">
+                <strong>Fouls:</strong> Pushing, tripping, holding, or deliberate handball by a player is considered a foul.
+              </li>
+              <li class="list-group-item bg-transparent text-white border-0">
+                <strong>Penalties:</strong> Fouls committed inside the penalty area result in a penalty kick for the opposing team.
+              </li>
+              <li class="list-group-item bg-transparent text-white border-0">
+                <strong>Goalkeeper Rules:</strong> The goalkeeper can only use hands within their penalty area and cannot pick up a back-pass from a teammate.
+              </li>
+              <li class="list-group-item bg-transparent text-white border-0">
+                <strong>Substitutions:</strong> Up to 5 substitutions are allowed in most matches for player rotation or injury.
+              </li>
+              <li class="list-group-item bg-transparent text-white border-0">
+                <strong>Cards:</strong> A yellow card is a warning; two yellows or a straight red card leads to the player being sent off.
+              </li>
+              <li class="list-group-item bg-transparent text-white border-0">
+                <strong>Kick-Off:</strong> The match starts with a kick-off from the center circle and resumes in the same way after each goal.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Rules -->
+    <!-- Important Facts-->
+<div style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Important Facts About Football
+      </h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Invented</h5>
+            <p class="card-text">Modern football, as we know it, was codified in 1863 when the Football Association (FA) was formed in England.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">FIFA World Cup</h5>
+            <p class="card-text">The FIFA World Cup is the most prestigious tournament in football. It is held every four years and is contested by national teams from around the world. The first World Cup was held in 1930 in Uruguay.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Other Tournaments</h5>
+            <p class="card-text">Some other major football tournaments include:</p>
+            <ul>
+              <li><strong>UEFA Champions League:</strong> A club competition featuring the best teams from Europe.</li>
+              <li><strong>Copa América:</strong> A continental competition for South American national teams.</li>
+              <li><strong>Africa Cup of Nations (AFCON):</strong> The most important national football tournament in Africa.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Wimbledon</h5>
+            <p class="card-text">Wimbledon is not related to football; it is a famous tennis tournament. However, FIFA World Cup and UEFA Champions League are considered football's equivalents.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- End Important Facts-->
+
+<!-- Statistics / Records -->
+<div class="container my-5" data-aos="zoom-in">
+  <div class="card bg-dark border-warning shadow-lg">
+    <div class="card-body px-4 px-md-5">
+      <div class="my-4 text-center">
+        <h2 class="display-4 fw-bold d-inline-block"
+            style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+          Statistics / Records
+        </h2>
+      </div>
+      <div class="mx-auto" style="max-width: 800px;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Most World Cup Titles:</strong> Brazil holds the record with 5 World Cup victories (1958, 1962, 1970, 1994, and 2002).
+          </li>
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Most Goals in World Cup History:</strong> Marta, Brazil’s forward, holds the record for most goals in World Cup history (17 goals).
+          </li>
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Most Goals in a Season (Club):</strong> Lionel Messi holds the record for most goals in a European season with 73 goals in the 2011-12 season for Barcelona.
+          </li>
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Most Goals in Football History:</strong> Cristiano Ronaldo surpassed Pele and Messi to become the highest goal-scorer in football history.
+          </li>
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Longest Winning Streak:</strong> Brazil once went on a 35-match unbeaten run between 1993 and 1996.
+          </li>
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Most Expensive Football Transfer:</strong> The transfer of Neymar to Paris Saint-Germain (PSG) in 2017 for a record €222 million still holds the record for the highest transfer fee.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Statistics / Records -->
+<!-- Countries That Play This Game -->
+<div class="container my-5" data-aos="fade-up">
+  <div class="card bg-dark text-white border-warning shadow-lg">
+    <div class="card-body text-center">
+      <h2 class="display-5 fw-bold text-warning mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+        🌍 Countries That Play Football
+      </h2>
+      <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="Flag 4.png" class="card-img-top rounded" alt="Brazil Flag">
+            <div class="card-body">
+              <h5 class="card-title">Brazil</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="Flag 3.png" class="card-img-top rounded" alt="France Flag">
+            <div class="card-body">
+              <h5 class="card-title">France</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="Flag 2.png" class="card-img-top rounded" alt="Germany Flag">
+            <div class="card-body">
+              <h5 class="card-title">Germany</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="Flag 1.png" class="card-img-top rounded" alt="Argentina Flag">
+            <div class="card-body">
+              <h5 class="card-title">Argentina</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Countries That Play This Game -->
+ <!--Famous Football Players-->
+<div class="container mt-5">
+  <h2 class="text-center text-warning mb-4">⚽ Famous Football Players</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#messiModal" style="cursor:pointer;">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.aUSLdPU17DD2ayBQ28dE8AHaEo&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;" alt="Lionel Messi">
+        <div class="card-body">
+          <h5 class="card-title">Lionel Messi</h5>
+          <p class="card-text">8 Ballon d'Or | Argentina</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#ronaldoModal" style="cursor:pointer;">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.TUt2ufmYnwUVkuXpHqlkgAHaEo&pid=Api&P=0&h=220" class="card-img-top"style="width: 100%; height: 250px; object-fit: cover;"  alt="Cristiano Ronaldo">
+        <div class="card-body">
+          <h5 class="card-title">Cristiano Ronaldo</h5>
+          <p class="card-text">5 Ballon d'Or | Portugal</p>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#mbappeModal" style="cursor:pointer;">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.XyyHbw3MvqCDZmU9xlzqswHaFZ&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;" alt="Kylian Mbappé">
+        <div class="card-body">
+          <h5 class="card-title">Kylian Mbappé</h5>
+          <p class="card-text">World Cup Winner | France</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="modal fade" id="messiModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.aUSLdPU17DD2ayBQ28dE8AHaEo&pid=Api&P=0&h=220"style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;" alt="Lionel Messi">
+      <h4>Lionel Messi</h4>
+      <p><strong>Country:</strong> Argentina</p>
+      <p><strong>Date of Birth:</strong> June 24, 1987</p>
+      <p><strong>Position:</strong> Forward / Attacking Midfielder</p>
+      <p><strong>Current Club:</strong> Inter Miami CF</p>
+      <p><strong>Ballon d'Or:</strong> 8 (Record Holder)</p>
+      <p><strong>Career Highlights:</strong> 
+        FIFA World Cup Winner (2022), Copa America (2021), 4x Champions League Winner, Over 800 Career Goals
+      </p>
+      <p><strong>Style:</strong> Visionary, Dribbler, Playmaker, Master of Free Kicks</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="ronaldoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.TUt2ufmYnwUVkuXpHqlkgAHaEo&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"alt="Cristiano Ronaldo">
+      <h4>Cristiano Ronaldo</h4>
+      <p><strong>Country:</strong> Portugal</p>
+      <p><strong>Date of Birth:</strong> February 5, 1985</p>
+      <p><strong>Position:</strong> Forward</p>
+      <p><strong>Current Club:</strong> Al-Nassr (Saudi Arabia)</p>
+      <p><strong>Ballon d'Or:</strong> 5</p>
+      <p><strong>Career Highlights:</strong> 
+        Euro 2016 Winner, 5x Champions League Winner, All-Time Top Scorer (International + UCL), Over 850 Career Goals
+      </p>
+      <p><strong>Style:</strong> Explosive, Goal Machine, Headers, Long Shots, Penalty Expert</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="mbappeModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.XyyHbw3MvqCDZmU9xlzqswHaFZ&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"alt="Kylian Mbappé" >
+      <h4>Kylian Mbappé</h4>
+      <p><strong>Country:</strong> France</p>
+      <p><strong>Date of Birth:</strong> December 20, 1998</p>
+      <p><strong>Position:</strong> Forward / Winger</p>
+      <p><strong>Current Club:</strong> Paris Saint-Germain (Leaving in 2024), Expected to join Real Madrid</p>
+      <p><strong>Achievements:</strong> FIFA World Cup Winner (2018), Finalist (2022), Golden Boot (2022)</p>
+      <p><strong>Career Highlights:</strong> Fastest to 40+ World Cup Goals, French League Top Scorer Multiple Times</p>
+      <p><strong>Style:</strong> Speedster, Finisher, Skilled Dribbler, Counterattack Specialist</p>
+    </div>
+  </div>
+</div>
+
+<!--End Famous Football Players-->
+</section>
+    
+    <!--  Start Footer -->
+   <footer style="background: url('Billiards 1.jpeg') no-repeat center center/cover; background-color: #111; color: white; padding-top: 40px; padding-bottom: 20px; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.8); z-index: 1;"></div>
+
+  <div class="container-fluid" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <span class="text-warning"  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" style="font-size: 28px; font-weight: bold;">Sportsinfo</span>
+        <span style="font-size: 28px; font-weight: bold; color: white;">.com</span>
+        <p>Your hub for every game, every goal, every glory.</p>
+        <div>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-facebook"></i></a>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 20px; transition: transform 0.3s;"> <i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-weight: bold; margin-bottom: 20px;">Quick Links</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Home</a></li>
+          <li><a href="about.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">About Us</a></li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Contact</a></li>
+          <li><a href="guestbook.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Guestbook</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" style="font-weight: bold; margin-bottom: 20px;">Popular Sports</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="football.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Football</a></li>
+          <li><a href="Basketball.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Basketball</a></li>
+          <li><a href="Tennis.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Tennis</a></li>
+          <li><a href="Golf.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Golf</a></li>
+          <li><a href="Motorcycle Racing.html" style="color: white; text-decoration: none;">Motorcycle Racing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" style="font-weight: bold; margin-bottom: 20px;">Contact Info</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px;"><i class="bi bi-geo-alt-fill me-2"></i> 123 Sports Ave, Infocity</li>
+          <li style="margin-bottom: 8px;"><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> info@sportsinfo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0;">
+
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+       <p style="margin: 0;">&copy; 2025 SportsInfo.com — Your Game, Our Passion.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p style="margin: 0;">A product of <a href="#" style="color: white; text-decoration: underline;">Infocom Corporation</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+      <!-- End Footer Section -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         
+         AOS.init();
+
+          document.getElementById("sportSearch").addEventListener("change", function () {
+          var selected = this.value;
+          if (selected) {
+          window.location.href = selected;
+         }
+       });
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton.info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    
+</head>
+<body>
+    <!-- Start Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="Index.html" style="text-decoration: none;">
+      <img src="https://img.icons8.com/ios-filled/50/FA5252/tennis-ball.png" alt="Tennis Ball Icon" />
+      <span style="margin-left: 8px; display: flex; align-items: center; cursor: pointer; transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.1)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        <span style="color: #FFA500; font-weight: bold; font-size: 2rem; letter-spacing: 1px; text-transform: uppercase;">
+          Sportsinfo
+        </span>
+        <span style="color: #ffffff; font-size: 2rem; font-weight: 600;">
+          .com
+        </span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sports
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="sportsDropdown">
+            <li><a class="dropdown-item" href="football.html">Football</a></li>
+            <li><a class="dropdown-item" href="Tennis.html">Tennis</a></li>
+            <li><a class="dropdown-item" href="Judo.html">Judo</a></li>
+            <li><a class="dropdown-item" href="Motorcycle Racing.html">Motorcycle Racing</a></li>
+            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+            <li><a class="dropdown-item" href="Golf.html">Golf</a></li>
+            <li><a class="dropdown-item" href="Chess.html">Chess</a></li>
+            <li><a class="dropdown-item" href="Billiards.html">Billiards</a></li>
+            <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
+            <li><a class="dropdown-item" href="Swimming.html">Swimming</a></li>
+            <li><a class="dropdown-item" href="Athletics.html">Athletics</a></li>
+            <li><a class="dropdown-item" href="Basketball.html">Basketball</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Guestbook.html">Guestbook</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3" role="search">
+        <select id="sportSearch" class="form-select select2" aria-label="Search Sports">
+          <option value="">Search Sports...</option>
+          <option value="football.html">Football</option>
+          <option value="Tennis.html">Tennis</option>
+          <option value="Judo.html">Judo</option>
+          <option value="Motorcycle Racing.html">Motorcycle Racing</option>
+          <option value="volleyball.html">Volleyball</option>
+          <option value="Golf.html">Golf</option>
+          <option value="Chess.html">Chess</option>
+          <option value="Billiards.html">Billiards</option>
+          <option value="Badminton.html">Badminton</option>
+          <option value="Swimming.html">Swimming</option>
+          <option value="Athletics.html">Athletics</option>
+          <option value="Basketball.html">Basketball</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</nav>
+      <!--End Navbar-->
+      <!-- hero-section--> 
+      <header class="hero-section text-white d-flex align-items-center justify-content-center position-relative"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Badminton.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;"
+  data-aos="fade-up" data-aos-duration="1500">
+
+  <h1 style="font-size: 3.5rem; color: #fff; line-height: 1.3; font-style: italic; margin-bottom: 20px;" data-aos="zoom-in" data-aos-delay="300">
+    Welcome to the<br>
+    <span style="font-weight: bold; font-size: 4.2rem; letter-spacing: 2px; color: #FFA500; text-transform: uppercase;">
+      Badminton World
+    </span>
+  </h1>
+
+  <p style="font-size: 1.2rem; max-width: 600px; color: #ddd;" data-aos="fade-up" data-aos-delay="600">
+    Badminton is an indoor sport played with rackets and a shuttlecock between two or four players. The objective is to hit the shuttlecock over the net and land it in the opponent’s court to score points.
+  </p>
+
+  <a href="Badminton.html" style="margin-top: 30px; padding: 12px 30px; background-color: #FFA500; color: #000; font-weight: bold; border-radius: 8px; font-size: 1.1rem;" data-aos="fade-up" data-aos-delay="900">
+    Explore Now
+  </a>
+
+   </header>
+<!--End hero-section--> 
+<!--Introduction-->
+<section style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">  
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Badminton 
+      </h2>
+      <p class="mt-3 fs-5">Badminton is a fast-paced game that requires speed, agility, and quick reflexes.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">Introduction of Badminton</h3>
+        <p>Badminton is a popular indoor sport played using rackets and a shuttlecock. It can be played as singles (one player on each side) or doubles (two players on each side). The game is known for its fast pace, requiring quick movements, sharp reflexes, and strategic gameplay. It is played on a rectangular court divided by a net, and the main goal is to hit the shuttlecock over the net in such a way that the opponent cannot return it. Badminton is enjoyed both recreationally and competitively around the world and is also an Olympic sport.</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://www.pngmart.com/files/3/Badminton-Birdie-PNG-Image.png" class="img-fluid" alt=" Badminton Player" style="max-height: 300px;">
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">How Many Players Play the Game?</h3>
+        <p>
+            Badminton can be played in two formats: singles and doubles. In singles, there are 2 players—one on each side of the net. In doubles, there are 4 players—two players on each team, making it a team game.
+        </p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="http://www.onlygfx.com/wp-content/uploads/2018/04/badminton-sport-silhouette-6.png" class="img-fluid" alt=" Badminton" style="max-height: 300px;">
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-right">
+      <h3 class="text-warning">Is it a team game?</h3>
+      <p>Yes, Badminton can be a team game when played in the doubles format, where two players team up against another pair. </p>
+    </div>
+    <!-- End Introduction-->
+    <!-- Strategies -->
+    <div class="my-5 text-center" data-aos="fade-up">
+      <h2 class="display-4 fw-bold d-inline-block" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+        Strategies of the Game
+      </h2>
+    </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🎯 Play to Your Opponent’s Weakness</h5>
+              <p class="card-text">
+                Observe your opponent and aim shots toward their weaker side, usually the backhand or slower side.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🔁 Use a Variety of Shots</h5>
+              <p class="card-text">
+                Mix up smashes, drop shots, clears, and drives to confuse your opponent and break their rhythm.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🕸️ Control the Net</h5>
+              <p class="card-text">
+                Try to stay close to the net with quick, low shots. Net control often gives you the chance to win quick points.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🧠 Stay Focused and Patient</h5>
+              <p class="card-text">
+                Avoid rushing. Stay calm, watch your opponent, and wait for the right time to attack.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--End Strategies -->
+    <!--Rules -->
+    <div class="container my-5 card bg-dark text-white border-warning shadow-lg" data-aos="flip-left">
+        <div class="card-body px-4 px-md-5">
+          <div class="my-4 text-center" data-aos="fade-up">
+            <h2 class="display-4 fw-bold d-inline-block"
+                style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+              Rule of the game
+            </h2>
+          </div>
+          <div class="mx-auto" style="max-width: 800px;">
+            <h4 class="text-warning">Objective</h4>
+           <p>
+            The primary objective in badminton is to hit the shuttlecock over the net into the opponent's side of the court in such a way that they cannot return it. Points are scored when the shuttlecock lands in the opponent’s court.
+           </p>
+          </div>
+            <div class="mx-auto" style="max-width: 800px;">
+              <h4 class="text-warning">Court Dimensions</h4>
+              <p>
+                The court for singles is 13.4 meters long and 5.18 meters wide, while for doubles, it’s the same length but 6.1 meters wide. The court is divided by a net, and players must stay within the boundaries.
+             </p>
+              </div>
+              <div class="mx-auto" style="max-width: 800px;">
+                <h4 class="text-warning">Service Rules</h4>
+                <ul>
+                  <li>Serving must be done from behind the service line, diagonally into the opponent's service court.</li>
+                  <li>The server must stand within their right or left side of the court and serve to the opposite diagonal court.</li>
+                  <li>If the server wins the point, they serve again from the alternate side.</li>
+                 </ul> 
+                </div>
+                <div class="mx-auto" style="max-width: 800px;">
+                  <h4 class="text-warning">Scoring System</h4>
+                  <ul>
+                    <li>Badminton uses a rally scoring system, where points can be scored by either player or team, regardless of who served.</li>
+                    <li>Games are played to 21 points, and a player must win by at least a 2-point lead.</li>
+                   </ul> 
+                 </div>
+                  <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">Faults</h4>
+                    <ul>
+                      <li>A fault occurs if the shuttlecock lands outside the boundaries, hits the net (except during a serve), or a player commits a foul (like stepping outside the court or hitting the shuttlecock incorrectly).</li>
+                      <li>Players must also avoid hitting the shuttlecock before it crosses the net or obstructing the shuttle with their body.</li>
+                     </ul> 
+                  </div>
+                  <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">Switching Sides</h4>
+                    <ul>
+                      <li>In singles, players switch sides when the total points reach 11 in a game.</li>
+                      <li>In doubles, teams switch sides after each game.</li>
+                     </ul> 
+                  </div>
+                  <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">Let</h4>
+                   <p>A let occurs when there is a temporary disruption, such as if the shuttlecock gets caught in the net. If a let happens, the point is replayed without any score change.</p>
+                  </div>
+      </div>
+    </div>
+    <!-- End Rules -->
+    <!-- Important Facts-->
+<div style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Important Facts About Badminton
+      </h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Oldest Badminton Origin</h5>
+           <p>
+            Badminton has its roots in ancient civilizations, but the modern version of the game originated in British India in the mid-19th century.
+           </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Shuttlecock Design</h5>
+           <p>The shuttlecock, or birdie, is made of 16 feathers attached to a cork base. It weighs around 4.75 to 5.50 grams.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Played in Over 170 Countries</h5>
+            <p>
+                Badminton is played and enjoyed in over 170 countries worldwide, making it one of the most popular sports globally.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Olympic Sport</h5>
+            <p>
+                Badminton was introduced as an Olympic sport in 1992 at the Summer Olympics in Barcelona. It has since become a key event in the games.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Fastest Racquet Sport</h5>
+            <p>
+                Badminton is known as the fastest racquet sport in the world. The shuttlecock can reach speeds of over 200 miles per hour (320 km/h) during a smash.   
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">China’s Dominance</h5>
+            <p>
+                China has dominated international badminton for decades, producing many world champions and Olympic medalists in both singles and doubles events.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ <!-- End Important Facts-->
+
+<!-- Statistics / Records -->
+<div class="container my-5" data-aos="zoom-in">
+  <div class="card bg-dark border-warning shadow-lg">
+    <div class="card-body px-4 px-md-5">
+      <div class="my-4 text-center">
+        <h2 class="display-4 fw-bold d-inline-block"
+            style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+          Statistics / Records
+        </h2>
+      </div>
+      <div class="mx-auto text-white" style="max-width: 800px;">
+        <h4 class="text-warning">Fastest Smash</h4>
+       <p>
+        The world record for the fastest badminton smash is held by Fu Haifeng of China, with a speed of 332 km/h (206 mph). This is one of the fastest recorded sports movements.
+       </p>
+      </div>
+        <div class="mx-auto text-white " style="max-width: 800px;">
+          <h4 class="text-warning">Most BWF Titles</h4>
+          <p>
+            The player with the most BWF (Badminton World Federation) titles is Lin Dan of China. He has won 5 World Championship titles and 2 Olympic gold medals.
+         </p>
+          </div>
+          <div class="mx-auto text-white" style="max-width: 800px;">
+            <h4 class="text-warning">Most Olympic Gold Medals</h4>
+            <p>
+                Lin Dan (China) and Carolina Marin (Spain) both hold 2 Olympic gold medals in badminton singles events, one of the most prestigious achievements in the sport.
+            </p>
+            </div>
+            <div class="mx-auto text-white" style="max-width: 800px;">
+              <h4 class="text-warning">Most All-England Titles</h4>
+              <p>
+                The record for the most All-England Open Badminton Championships titles is held by Rudy Hartono (Indonesia) with 8 titles in men’s singles.
+              </p> 
+             </div>
+              <div class="mx-auto text-white" style="max-width: 800px;">
+                <h4 class="text-warning">Longest Rally</h4>
+                <p>
+                    The longest rally in badminton history lasted 108 minutes during a match between Ratchanok Intanon (Thailand) and Wang Yihan (China) in the 2014 All England Open.
+                </p>
+              </div>
+              <div class="mx-auto text-white" style="max-width: 800px;">
+                <h4 class="text-warning">Youngest World Champion</h4>
+                <p>
+                    The youngest player to win the BWF World Championships in the singles category is Ratchanok Intanon (Thailand), who won at the age of 18 years in 2013.
+                </p> 
+              </div>
+              <div class="mx-auto text-white" style="max-width: 800px;">
+                <h4 class="text-warning">Most Career Wins</h4>
+               <p>
+                Lee Chong Wei (Malaysia), a badminton legend, has the most career wins in Men’s Singles, with over 700 career wins in top international tournaments.
+               </p>
+              </div>
+              <div class="mx-auto text-white" style="max-width: 800px;">
+                <h4 class="text-warning">Highest Winning Streak</h4>
+               <p>
+                Liu Cheng and Bao Yixin (China) set a record for the longest unbeaten streak in mixed doubles, winning 45 matches in a row
+               </p>
+              </div>
+    </div>
+  </div>
+</div>
+<!-- End Statistics / Records -->
+<!-- Countries That Play This Game -->
+<div class="container my-5" data-aos="fade-up">
+  <div class="card bg-dark text-white border-warning shadow-lg">
+    <div class="card-body text-center">
+      <h2 class="display-5 fw-bold text-warning mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+        🌍 Countries That Play Badminton
+      </h2>
+      <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src=Indonesia.jpeg" class="card-img-top rounded" alt="Brazil Flag">
+            <div class="card-body">
+              <h5 class="card-title">Indonesia</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="Malaysia.jpeg" class="card-img-top rounded" alt="France Flag">
+            <div class="card-body">
+              <h5 class="card-title">Malaysia</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="china.jpeg" class="card-img-top rounded" alt="Germany Flag">
+            <div class="card-body">
+              <h5 class="card-title">China</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="india.jpeg" class="card-img-top rounded" alt="Argentina Flag">
+            <div class="card-body">
+              <h5 class="card-title">India</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- End Countries That Play This Game -->
+<!--Famous Badminton Players-->
+<div class="container mt-5">
+  <h2 class="text-center text-warning mb-4">🏸 Famous Badminton Players</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#sindhuModal" style="cursor:pointer;">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.ZMpRo_eTfW_b2fw8cKePRAHaFj&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;" alt="PV Sindhu">
+        <div class="card-body">
+          <h5 class="card-title">P. V. Sindhu</h5>
+          <p class="card-text">Olympic Medalist | India</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#lindanModal" style="cursor:pointer;">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.A8TqU1hFJFG7iSSjimWvCAHaFL&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;"alt="Lin Dan">
+        <div class="card-body">
+          <h5 class="card-title">Lin Dan</h5>
+          <p class="card-text">2x Olympic Gold | China</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#axelsenModal" style="cursor:pointer;">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.MXY0ch1eSsuaE6vFwJhZtAHaFF&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;"alt="Viktor Axelsen">
+        <div class="card-body">
+          <h5 class="card-title">Viktor Axelsen</h5>
+          <p class="card-text">Olympic Gold | Denmark</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="sindhuModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.ZMpRo_eTfW_b2fw8cKePRAHaFj&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"class="img-fluid rounded" alt="PV Sindhu">
+      <h4 class="mt-3">P. V. Sindhu</h4>
+      <p><strong>Country:</strong> India</p>
+      <p><strong>Date of Birth:</strong> July 5, 1995</p>
+      <p><strong>Event:</strong> Women's Singles</p>
+      <p><strong>Olympic Medals:</strong> Silver (2016), Bronze (2020)</p>
+      <p><strong>Achievements:</strong> World Champion (2019), Multiple Superseries Titles</p>
+      <p><strong>Style:</strong> Aggressive Smash Play, Tactical Court Movement</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="lindanModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.A8TqU1hFJFG7iSSjimWvCAHaFL&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"class="img-fluid rounded" alt="Lin Dan">
+      <h4 class="mt-3">Lin Dan</h4>
+      <p><strong>Country:</strong> China</p>
+      <p><strong>Date of Birth:</strong> October 14, 1983</p>
+      <p><strong>Event:</strong> Men's Singles</p>
+      <p><strong>Olympic Medals:</strong> Gold (2008, 2012)</p>
+      <p><strong>Achievements:</strong> 5x World Champion, Grand Slam Winner</p>
+      <p><strong>Style:</strong> Precision, Power, Legendary Footwork</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="axelsenModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.MXY0ch1eSsuaE6vFwJhZtAHaFF&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"class="img-fluid rounded" alt="Viktor Axelsen">
+      <h4 class="mt-3">Viktor Axelsen</h4>
+      <p><strong>Country:</strong> Denmark</p>
+      <p><strong>Date of Birth:</strong> January 4, 1994</p>
+      <p><strong>Event:</strong> Men's Singles</p>
+      <p><strong>Olympic Gold:</strong> Tokyo 2020</p>
+      <p><strong>Achievements:</strong> World Champion (2017, 2022), European Champion</p>
+      <p><strong>Style:</strong> Tall Attacker, Excellent Reach, Smart Game Plan</p>
+    </div>
+  </div>
+</div>
+<!-- End Famous Badminton Players -->
+
+</section>
+   
+    <!--  Start Footer -->
+     <footer style="background: url('Billiards 1.jpeg') no-repeat center center/cover; background-color: #111; color: white; padding-top: 40px; padding-bottom: 20px; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.8); z-index: 1;"></div>
+
+  <div class="container-fluid" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <span class="text-warning"  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" style="font-size: 28px; font-weight: bold;">Sportsinfo</span>
+        <span style="font-size: 28px; font-weight: bold; color: white;">.com</span>
+        <p>Your hub for every game, every goal, every glory.</p>
+        <div>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-facebook"></i></a>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 20px; transition: transform 0.3s;"> <i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-weight: bold; margin-bottom: 20px;">Quick Links</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Home</a></li>
+          <li><a href="about.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">About Us</a></li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Contact</a></li>
+          <li><a href="guestbook.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Guestbook</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" style="font-weight: bold; margin-bottom: 20px;">Popular Sports</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="football.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Football</a></li>
+          <li><a href="Basketball.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Basketball</a></li>
+          <li><a href="Tennis.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Tennis</a></li>
+          <li><a href="Golf.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Golf</a></li>
+          <li><a href="Motorcycle Racing.html" style="color: white; text-decoration: none;">Motorcycle Racing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" style="font-weight: bold; margin-bottom: 20px;">Contact Info</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px;"><i class="bi bi-geo-alt-fill me-2"></i> 123 Sports Ave, Infocity</li>
+          <li style="margin-bottom: 8px;"><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> info@sportsinfo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0;">
+
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+       <p style="margin: 0;">&copy; 2025 SportsInfo.com — Your Game, Our Passion.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p style="margin: 0;">A product of <a href="#" style="color: white; text-decoration: underline;">Infocom Corporation</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+      <!-- End Footer Section -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         
+         AOS.init();
+          document.getElementById("sportSearch").addEventListener("change", function () {
+          var selected = this.value;
+          if (selected) {
+          window.location.href = selected;
+         }
+       });
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletics.info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    
+</head>
+<body>
+    <!-- Start Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="Index.html" style="text-decoration: none;">
+      <img src="https://img.icons8.com/ios-filled/50/FA5252/tennis-ball.png" alt="Tennis Ball Icon" />
+      <span style="margin-left: 8px; display: flex; align-items: center; cursor: pointer; transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.1)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        <span style="color: #FFA500; font-weight: bold; font-size: 2rem; letter-spacing: 1px; text-transform: uppercase;">
+          Sportsinfo
+        </span>
+        <span style="color: #ffffff; font-size: 2rem; font-weight: 600;">
+          .com
+        </span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sports
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="sportsDropdown">
+            <li><a class="dropdown-item" href="football.html">Football</a></li>
+            <li><a class="dropdown-item" href="Tennis.html">Tennis</a></li>
+            <li><a class="dropdown-item" href="Judo.html">Judo</a></li>
+            <li><a class="dropdown-item" href="Motorcycle Racing.html">Motorcycle Racing</a></li>
+            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+            <li><a class="dropdown-item" href="Golf.html">Golf</a></li>
+            <li><a class="dropdown-item" href="Chess.html">Chess</a></li>
+            <li><a class="dropdown-item" href="Billiards.html">Billiards</a></li>
+            <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
+            <li><a class="dropdown-item" href="Swimming.html">Swimming</a></li>
+            <li><a class="dropdown-item" href="Athletics.html">Athletics</a></li>
+            <li><a class="dropdown-item" href="Basketball.html">Basketball</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Guestbook.html">Guestbook</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3" role="search">
+        <select id="sportSearch" class="form-select select2" aria-label="Search Sports">
+          <option value="">Search Sports...</option>
+          <option value="football.html">Football</option>
+          <option value="Tennis.html">Tennis</option>
+          <option value="Judo.html">Judo</option>
+          <option value="Motorcycle Racing.html">Motorcycle Racing</option>
+          <option value="volleyball.html">Volleyball</option>
+          <option value="Golf.html">Golf</option>
+          <option value="Chess.html">Chess</option>
+          <option value="Billiards.html">Billiards</option>
+          <option value="Badminton.html">Badminton</option>
+          <option value="Swimming.html">Swimming</option>
+          <option value="Athletics.html">Athletics</option>
+          <option value="Basketball.html">Basketball</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</nav>
+      <!--End Navbar-->
+      <!-- hero-section--> 
+ <header class="hero-section text-white d-flex align-items-center justify-content-center position-relative"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Athletics.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;"
+  data-aos="fade-up" data-aos-duration="1500">
+
+  <h1 style="font-size: 3.5rem; color: #fff; line-height: 1.3; font-style: italic; margin-bottom: 20px;" data-aos="zoom-in" data-aos-delay="300">
+    Welcome to the<br>
+    <span style="font-weight: bold; font-size: 4.2rem; letter-spacing: 2px; color: #FFA500; text-transform: uppercase;">
+      Athletics World
+    </span>
+  </h1>
+
+  <p style="font-size: 1.2rem; max-width: 600px; color: #ddd;" data-aos="fade-up" data-aos-delay="600">
+    Athletics is a group of sporting events that involve physical activities like running, jumping, and throwing, typically held on a track and field.
+  </p>
+
+  <a href="Athletics.html" style="margin-top: 30px; padding: 12px 30px; background-color: #FFA500; color: #000; font-weight: bold; border-radius: 8px; font-size: 1.1rem;" data-aos="fade-up" data-aos-delay="900">
+    Explore Now
+  </a>
+
+   </header>
+<!--End hero-section--> 
+<!--Introduction-->
+<section style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">  
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Athletics
+      </h2>
+      <p class="mt-3 fs-5">Athletics is a sport that includes running, jumping, and throwing events.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">Introduction of Athletics </h3>
+        <p>Athletics is one of the oldest forms of sport, involving competitive events based on running, jumping, and throwing. It is often called "track and field" and is played at school, national, and international levels. Athletics helps improve physical fitness, discipline, and teamwork.</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://images.vexels.com/media/users/3/129259/isolated/preview/9ae63f1a28d6848f6bef7c7377550054-athlete-running-silhouette-in-blue.png" class="img-fluid" alt=" Athletics Player" style="max-height: 300px;">
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">How Many Players Play the Game?</h3>
+        <p>
+          <ul>
+            <li><strong>Sprints:</strong> Usually 8 runners.</li>
+            <li><strong>Relay Races:</strong> 4 players per team.</li>
+            <li><strong>Marathons or Race Walking:</strong> Many participants.</li>
+          </ul>
+        </p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://freepngimg.com/save/140865-picture-running-athlete-female-free-download-image/609x1111" class="img-fluid" alt="Athletics" style="max-height: 300px;">
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-right">
+      <h3 class="text-warning">Is it a team game?</h3>
+      <p> Athletics is primarily an **individual sport**, where athletes compete on their own in events like running, jumping, and throwing. However, there are certain **team events** in athletics, such as **relay races**, where athletes work together as a team to achieve a common goal. So, while the majority of athletics events are individual, team events like the relay race do exist and require teamwork and coordination. </p>
+    </div>
+    <!-- End Introduction-->
+    <!-- Strategies -->
+    <div class="my-5 text-center" data-aos="fade-up">
+      <h2 class="display-4 fw-bold d-inline-block" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+        Strategies of the Game
+      </h2>
+    </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🟢Track Events</h5>
+              <p class="card-text">
+                <ul>
+                  <li><strong>Sprint Strategy:</strong>Focus on explosive start, maintaining top speed, and strong finish.</li>
+                  <li><strong>Middle Distance:</strong>Pace control, energy conservation, and a final sprint (kick) at the end.</li>
+                  <li><strong>Long Distance:</strong>Endurance management, steady rhythm, and timing the sprint finish wisely.
+
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🟡 Relay Races:</h5>
+              <p class="card-text">
+                <ul>
+                  <li>Smooth and quick baton exchanges.</li>
+                  <li>Placing the fastest runner last (anchor leg).</li>
+                  <li>Maintaining proper lane disciplin.</li>
+                  <li>Ensuring all runners are prepared with a good warm-up</li>
+                  <li>Coordinating the baton exchange smoothly within the designated zone.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🔵 Field Events:</h5>
+              <p class="card-text">
+                <ul>
+                  <li>Perfecting technique (e.g., spin or glide in shot put).</li>
+                  <li>Managing run-up or approach speed.</li>
+                  <li>Timing the jump or release for maximum effect.</li>
+                </ul> 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🔴 Combined Events</h5>
+              <p class="card-text">
+                <ul>
+                  <li>Balancing performance across all events.</li>
+                  <li>Saving energy for weaker areas.</li>
+                  <li> Mental focus over long competitions.</li>
+                </ul> 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--End Strategies -->
+    <!--Rules -->
+    <div class="container my-5 card bg-dark text-white border-warning shadow-lg" data-aos="flip-left">
+        <div class="card-body px-4 px-md-5">
+          <div class="my-4 text-center" data-aos="fade-up">
+            <h2 class="display-4 fw-bold d-inline-block"
+                style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+              Rule of the game
+            </h2>
+          </div>
+          <div class="mx-auto" style="max-width: 800px;">
+            <h4 class="text-warning">Rules for Running Events:</h4>
+            <ul>
+              <li>Runners must start behind the starting line; the race begins on the sound of a gunshot.</li>
+              <li>Runners must stay within their designated lanes throughout the race</li>
+              <li>The runner who crosses the finish line first with their torso wins</li>
+            </ul>
+          </div>
+            <div class="mx-auto" style="max-width: 800px;">
+              <h4 class="text-warning">Relay Races:</h4>
+              <ul>
+                <li>The baton must be passed within a 20-meter exchange zone; dropping it results in disqualification.</li>
+                <li>Teams must stay in their lanes; stepping out can lead to disqualification.</li>
+               </ul> 
+              </div>
+              <div class="mx-auto" style="max-width: 800px;">
+                <h4 class="text-warning">Jumping Events:</h4>
+                <ul>
+                  <li>In the long jump, athletes must land in the sandpit; in high jump, they must clear the bar without knocking it off.</li>
+                  <li>Athletes get a limited number of attempts; long jump is measured from the takeoff line to the nearest mark in the sand</li>
+                 </ul> 
+                </div>
+                <div class="mx-auto" style="max-width: 800px;">
+                  <h4 class="text-warning">Throwing Events:</h4>
+                  <ul>
+                    <li>Athletes must stay within the throwing area; stepping outside or crossing the foul line results in a failed attempt.</li>
+                    <li>The throw is measured from the center of the throwing circle or sector to where the implement lands.</li>
+                   </ul> 
+                 </div>
+                  <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">Marathon and Race Walking:</h4>
+                    <ul>
+                      <li>A marathon is 42.195 kilometers. In race walking, one foot must always be in contact with the ground, and the supporting leg must stay straight.</li>
+                      <li>Athletes can be disqualified for incorrect walking form or for leaving the designated course.  </li>
+                     </ul> 
+                  </div>
+      </div>
+    </div>
+    <!-- End Rules -->
+    <!-- Important Facts-->
+<div style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Important Facts About Athletes
+      </h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Diet & Nutrition</h5>
+            <ul>
+              <li>Athletes need a balanced diet with protein, carbs, vitamins, and minerals.</li>
+              <li>Hydration is key — even slight dehydration affects performance.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Training & Fitness</h5>
+            <ul>
+              <li>Most athletes train 4–6 hours daily depending on their sport.</li>
+              <li>Training includes strength, endurance, and flexibility exercises.</li>
+              <li>Sticking to routines helps avoid injury and burnout.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Mind & Discipline</h5>
+            <ul>
+              <li>Mental toughness is as important as physical strength.</li>
+              <li>Athletes often start young and train consistently for years.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Injuries & Recovery</h5>
+            <ul>
+              <li>Rest and proper sleep are vital for muscle recovery.</li>
+              <li>Physiotherapists help manage injuries and maintain peak condition.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ <!-- End Important Facts-->
+
+<!-- Statistics / Records -->
+<div class="container my-5" data-aos="zoom-in">
+  <div class="card bg-dark border-warning shadow-lg">
+    <div class="card-body px-4 px-md-5">
+      <div class="my-4 text-center">
+        <h2 class="display-4 fw-bold d-inline-block"
+            style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+          Statistics / Records
+        </h2>
+      </div>
+      <div class="mx-auto" style="max-width: 800px;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Most World Cup Titles:</strong> Brazil holds the record with 5 World Cup victories (1958, 1962, 1970, 1994, and 2002).
+          </li>
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Most Goals in World Cup History:</strong> Marta, Brazil’s forward, holds the record for most goals in World Cup history (17 goals).
+          </li>
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Most Goals in a Season (Club):</strong> Lionel Messi holds the record for most goals in a European season with 73 goals in the 2011-12 season for Barcelona.
+          </li>
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Most Goals in Football History:</strong> Cristiano Ronaldo surpassed Pele and Messi to become the highest goal-scorer in football history.
+          </li>
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Longest Winning Streak:</strong> Brazil once went on a 35-match unbeaten run between 1993 and 1996.
+          </li>
+          <li class="list-group-item bg-transparent border-0 text-white">
+            <strong>Most Expensive Football Transfer:</strong> The transfer of Neymar to Paris Saint-Germain (PSG) in 2017 for a record €222 million still holds the record for the highest transfer fee.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Statistics / Records -->
+<!-- Countries That Play This Game -->
+<div class="container my-5" data-aos="fade-up">
+  <div class="card bg-dark text-white border-warning shadow-lg">
+    <div class="card-body text-center">
+      <h2 class="display-5 fw-bold text-warning mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+        🌍 Countries That Play  Athletes
+      </h2>
+      <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="United States.jpeg" class="card-img-top rounded" alt="Brazil Flag">
+            <div class="card-body">
+              <h5 class="card-title">United States</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="japan.jpeg" class="card-img-top rounded" alt="France Flag">
+            <div class="card-body">
+              <h5 class="card-title">Japan</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="china.jpeg" class="card-img-top rounded" alt="Germany Flag">
+            <div class="card-body">
+              <h5 class="card-title">China</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="india.jpeg" class="card-img-top rounded" alt="Argentina Flag">
+            <div class="card-body">
+              <h5 class="card-title">India</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- End Countries That Play This Game -->
+<!--Famous Athletics Players-->
+<div class="container mt-5">
+  <h2 class="text-center text-warning mb-4">🏃‍♀️ Famous Athletics Players</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+   
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#boltModal" style="cursor:pointer;">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.XY-0yXTspHjOC1_as1YJiAHaFj&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;"alt="Usain Bolt">
+        <div class="card-body">
+          <h5 class="card-title">Usain Bolt</h5>
+          <p class="card-text">Fastest Man on Earth | Jamaica</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#neerajModal" style="cursor:pointer;">
+        <img src="https://imp.news/wp-content/uploads/2021/08/Neeraj-Chopra-2021.jpg" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;" alt="Neeraj Chopra">
+        <div class="card-body">
+          <h5 class="card-title">Neeraj Chopra</h5>
+          <p class="card-text">Olympic Gold Medalist | India</p>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#shellyModal" style="cursor:pointer;">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.hHnlgreiXdjirK3l6eADnwHaFN&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;" alt="Shelly-Ann Fraser-Pryce">
+        <div class="card-body">
+          <h5 class="card-title">Shelly-Ann Fraser-Pryce</h5>
+          <p class="card-text">Multiple Olympic Golds | Jamaica</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="modal fade" id="boltModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.XY-0yXTspHjOC1_as1YJiAHaFj&pid=Api&P=0&h=220"  style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"alt="Usain Bolt" >
+      <h4>Usain Bolt</h4>
+      <p><strong>Country:</strong> Jamaica</p>
+      <p><strong>Date of Birth:</strong> August 21, 1986</p>
+      <p><strong>Event:</strong> 100m, 200m Sprint</p>
+      <p><strong>Olympic Gold Medals:</strong> 8</p>
+      <p><strong>Achievements:</strong> World Record Holder in 100m (9.58s) & 200m (19.19s)</p>
+      <p><strong>Style:</strong> Power Sprinter, Iconic Celebrations, Speed Legend</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="neerajModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://imp.news/wp-content/uploads/2021/08/Neeraj-Chopra-2021.jpg" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"alt="Neeraj Chopra">
+      <h4>Neeraj Chopra</h4>
+      <p><strong>Country:</strong> India</p>
+      <p><strong>Date of Birth:</strong> December 24, 1997</p>
+      <p><strong>Event:</strong> Javelin Throw</p>
+      <p><strong>Olympic Gold:</strong> Tokyo 2020</p>
+      <p><strong>World Champion:</strong> 2023</p>
+      <p><strong>Style:</strong> Strength, Focus, Technique Master</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="shellyModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.hHnlgreiXdjirK3l6eADnwHaFN&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;" alt="Shelly-Ann Fraser-Pryce">
+      <h4>Shelly-Ann Fraser-Pryce</h4>
+      <p><strong>Country:</strong> Jamaica</p>
+      <p><strong>Date of Birth:</strong> December 27, 1986</p>
+      <p><strong>Event:</strong> 100m Sprint</p>
+      <p><strong>Olympic Medals:</strong> 3 Gold, 4 Silver</p>
+      <p><strong>Achievements:</strong> Multiple World Titles, Among Fastest Women in History</p>
+      <p><strong>Style:</strong> Explosive Starts, Determination, Speed Queen</p>
+    </div>
+  </div>
+</div>
+   <!-- End Famous Athletics Players-->
+</section>
+   
+    <!--  Start Footer -->
+  <footer style="background: url('Billiards 1.jpeg') no-repeat center center/cover; background-color: #111; color: white; padding-top: 40px; padding-bottom: 20px; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.8); z-index: 1;"></div>
+
+  <div class="container-fluid" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <span class="text-warning"  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" style="font-size: 28px; font-weight: bold;">Sportsinfo</span>
+        <span style="font-size: 28px; font-weight: bold; color: white;">.com</span>
+        <p>Your hub for every game, every goal, every glory.</p>
+        <div>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-facebook"></i></a>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 20px; transition: transform 0.3s;"> <i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-weight: bold; margin-bottom: 20px;">Quick Links</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Home</a></li>
+          <li><a href="about.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">About Us</a></li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Contact</a></li>
+          <li><a href="guestbook.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Guestbook</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" style="font-weight: bold; margin-bottom: 20px;">Popular Sports</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="football.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Football</a></li>
+          <li><a href="Basketball.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Basketball</a></li>
+          <li><a href="Tennis.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Tennis</a></li>
+          <li><a href="Golf.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Golf</a></li>
+          <li><a href="Motorcycle Racing.html" style="color: white; text-decoration: none;">Motorcycle Racing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" style="font-weight: bold; margin-bottom: 20px;">Contact Info</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px;"><i class="bi bi-geo-alt-fill me-2"></i> 123 Sports Ave, Infocity</li>
+          <li style="margin-bottom: 8px;"><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> info@sportsinfo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0;">
+
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+       <p style="margin: 0;">&copy; 2025 SportsInfo.com — Your Game, Our Passion.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p style="margin: 0;">A product of <a href="#" style="color: white; text-decoration: underline;">Infocom Corporation</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+      <!-- End Footer Section -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         
+         AOS.init();
+          document.getElementById("sportSearch").addEventListener("change", function () {
+          var selected = this.value;
+          if (selected) {
+          window.location.href = selected;
+         }
+       });
+      </script>
+    
+</body>
+</html>

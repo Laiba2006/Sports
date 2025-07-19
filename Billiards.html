@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billiards.info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    
+</head>
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="Index.html" style="text-decoration: none;">
+      <img src="https://img.icons8.com/ios-filled/50/FA5252/tennis-ball.png" alt="Tennis Ball Icon" />
+      <span style="margin-left: 8px; display: flex; align-items: center; cursor: pointer; transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.1)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        <span style="color: #FFA500; font-weight: bold; font-size: 2rem; letter-spacing: 1px; text-transform: uppercase;">
+          Sportsinfo
+        </span>
+        <span style="color: #ffffff; font-size: 2rem; font-weight: 600;">
+          .com
+        </span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sports
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="sportsDropdown">
+            <li><a class="dropdown-item" href="football.html">Football</a></li>
+            <li><a class="dropdown-item" href="Tennis.html">Tennis</a></li>
+            <li><a class="dropdown-item" href="Judo.html">Judo</a></li>
+            <li><a class="dropdown-item" href="Motorcycle Racing.html">Motorcycle Racing</a></li>
+            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+            <li><a class="dropdown-item" href="Golf.html">Golf</a></li>
+            <li><a class="dropdown-item" href="Chess.html">Chess</a></li>
+            <li><a class="dropdown-item" href="Billiards.html">Billiards</a></li>
+            <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
+            <li><a class="dropdown-item" href="Swimming.html">Swimming</a></li>
+            <li><a class="dropdown-item" href="Athletics.html">Athletics</a></li>
+            <li><a class="dropdown-item" href="Basketball.html">Basketball</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Guestbook.html">Guestbook</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3" role="search">
+        <select id="sportSearch" class="form-select select2" aria-label="Search Sports">
+          <option value="">Search Sports...</option>
+          <option value="football.html">Football</option>
+          <option value="Tennis.html">Tennis</option>
+          <option value="Judo.html">Judo</option>
+          <option value="Motorcycle Racing.html">Motorcycle Racing</option>
+          <option value="volleyball.html">Volleyball</option>
+          <option value="Golf.html">Golf</option>
+          <option value="Chess.html">Chess</option>
+          <option value="Billiards.html">Billiards</option>
+          <option value="Badminton.html">Badminton</option>
+          <option value="Swimming.html">Swimming</option>
+          <option value="Athletics.html">Athletics</option>
+          <option value="Basketball.html">Basketball</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</nav>
+      <!--End Navbar-->
+      <!-- hero-section--> 
+      <header class="hero-section text-white d-flex align-items-center justify-content-center position-relative"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Billiards 1.jpeg'); background-size: cover; background-position: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;"
+  data-aos="fade-up" data-aos-duration="1500">
+
+  <h1 style="font-size: 3.5rem; color: #fff; line-height: 1.3; font-style: italic; margin-bottom: 20px;" data-aos="zoom-in" data-aos-delay="300">
+    Welcome to the<br>
+    <span style="font-weight: bold; font-size: 4.2rem; letter-spacing: 2px; color: #FFA500; text-transform: uppercase;">
+    Billiards World
+    </span>
+  </h1>
+
+  <p style="font-size: 1.2rem; max-width: 600px; color: #ddd;" data-aos="fade-up" data-aos-delay="600">
+    Billiards is a cue sport played on a rectangular table without pockets, where players use a cue stick to strike balls and score points by hitting them in a specific sequence. It requires skill, precision, and strategy.
+  </p>
+
+  <a href="Billiards.html" style="margin-top: 30px; padding: 12px 30px; background-color: #FFA500; color: #000; font-weight: bold; border-radius: 8px; font-size: 1.1rem;" data-aos="fade-up" data-aos-delay="900">
+    Explore Now
+  </a>
+
+   </header>
+<!--End hero-section--> 
+<!--Introduction-->
+<section style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">  
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Billiards 
+      </h2>
+      <p class="mt-3 fs-5">Billiards is a table game played with a stick (cue) and balls, focusing on skill and accuracy.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">Introduction of Billiards</h3>
+        <p>Billiards is a traditional indoor cue sport played on a rectangular table with balls and a cue stick. The objective is to score points by striking the cue ball to hit other balls in a specific way. It requires focus, precision, and strategy, and is popular worldwide as both a casual and competitive game.</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://pngimg.com/uploads/billiard/billiard_PNG85034.png" class="img-fluid" alt="Billiards Player" style="max-height: 300px;">
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">How Many Players Play the Game?</h3>
+        <p>
+            Billiards is usually played by 2 players, who take turns to score points by hitting balls with a cue stick. In some formats, it can also be played in teams of two (doubles).
+        </p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://pngimg.com/uploads/billiard/billiard_PNG10944.png" class="img-fluid" alt=" Billiards" style="max-height: 300px;">
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-right">
+      <h3 class="text-warning">Is it a team game?</h3>
+      <p>Yes, Billiards can be a team game when played in the doubles format, where two players team up against another pair. However, it is most commonly played as a one-on-one game. </p>
+    </div>
+    <!-- End Introduction-->
+    <!-- Strategies -->
+    <div class="my-5 text-center" data-aos="fade-up">
+      <h2 class="display-4 fw-bold d-inline-block" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+        Strategies of the Game
+      </h2>
+    </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🎯 Plan Your Shots Ahead</h5>
+              <p class="card-text">
+                Think one or two shots ahead to position the cue ball for your next move.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🧠 Control the Cue Ball</h5>
+              <p class="card-text">
+                Mastering cue ball control helps you stay in charge of the table and avoid giving easy shots to your opponent.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🎱 Use Spin and Angles</h5>
+              <p class="card-text">
+                Adding spin (English) and using the right angles can help you hit target balls more effectively and set up better positions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🕰️ Be Patient and Precise</h5>
+              <p class="card-text">
+                Don’t rush. Billiards is a game of accuracy, not speed take your time to aim and strike with confidence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--End Strategies -->
+    <!--Rules -->
+    <div class="container my-5 card bg-dark text-white border-warning shadow-lg" data-aos="flip-left">
+        <div class="card-body px-4 px-md-5">
+          <div class="my-4 text-center" data-aos="fade-up">
+            <h2 class="display-4 fw-bold d-inline-block"
+                style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+              Rule of the game
+            </h2>
+          </div>
+          <div class="mx-auto" style="max-width: 800px;">
+            <h4 class="text-warning">Objective</h4>
+           <p>
+           The goal is to score more points than your opponent by making legal shots with three balls on the table:
+           <ul>
+            <li>White cue ball (for Player A)</li>
+            <li>Yellow or spot white cue ball (for Player B)</li>
+            <li>Red object ball</li>
+           </ul>
+           </p>
+          </div>
+            <div class="mx-auto" style="max-width: 800px;">
+              <h4 class="text-warning">Scoring Methods</h4>
+              <p>
+                In billiards, players can score in three main ways. First is potting, where you strike your cue ball to pocket another ball — potting the red ball earns 3 points, and potting the opponent's cue ball gives 2 points. The second method is a cannon (carom), where your cue ball hits both the red and the opponent's cue ball in a single shot, scoring 2 points.
+             </p>
+              </div>
+              <div class="mx-auto" style="max-width: 800px;">
+                <h4 class="text-warning">Turn Rules</h4>
+                <ul>
+                  <li>A player continues playing until they miss a scoring shot or commit a foul.</li>
+                  <li>Players alternate turns when no legal shot is made.</li>
+                 </ul> 
+                </div>
+                <div class="mx-auto" style="max-width: 800px;">
+                  <h4 class="text-warning"> Common Fouls</h4>
+                  <ul>
+                    <li>Hitting the wrong ball first</li>
+                    <li>Cue ball jumps off the table</li>
+                    <li>Making no contact with any ball</li>
+                    <li>Potting the cue ball without a valid hit</li>
+                   </ul> 
+                 </div>
+                  <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">Winning</h4>
+                    <ul>
+                      <li>The game can be played to a set score (e.g., 100 or 200 points) or for a fixed time, where the highest score at the end wins</li>
+                     </ul> 
+                  </div>
+                
+      </div>
+    </div>
+    <!-- End Rules -->
+    <!-- Important Facts-->
+<div style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Important Facts About Billiards
+      </h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Origin</h5>
+           <p>
+           Billiards originated in France in the 15th century as an outdoor lawn game, later adapted to indoor tables.
+           </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Types of Billiards</h5>
+           <p>There are different versions including English Billiards, Carom Billiards (no pockets), and Pool (like 8-ball or 9-ball).</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Table Design</h5>
+            <p>
+               A standard billiards table has no pockets in carom games, while English Billiards and Pool tables have six pockets.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Three Balls Only</h5>
+            <p>
+               In English Billiards, only three balls are used — red, white, and yellow or spot white.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Cue Stick</h5>
+            <p>
+               All shots are made using a cue stick, and precision, angles, and spin (called English) are key skills.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Scoring</h5>
+            <p>
+                Points are earned through potting, cannons, and in-offs. Strategy and control are more important than power.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ <!-- End Important Facts-->
+
+<!-- Statistics / Records -->
+<div class="container my-5" data-aos="zoom-in">
+  <div class="card bg-dark border-warning shadow-lg">
+    <div class="card-body px-4 px-md-5">
+      <div class="my-4 text-center">
+        <h2 class="display-4 fw-bold d-inline-block"
+            style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+          Statistics / Records
+        </h2>
+        <p>
+          Billiards has a rich history of remarkable performances and legendary players. One of the most outstanding records is held by Walter Lindrum of Australia, who made an incredible break of 4,137 points in a single turn during a match in 1932 — a world record that still stands today. He dominated the game in his era and is widely regarded as one of the greatest billiards players in history.
+        </p>
+        <P>
+           In recent decades, players like Mike Russell from England and Pankaj Advani from India have set new standards in modern billiards. Pankaj Advani is particularly notable for being the only player to win world titles in both English Billiards and Snooker, earning multiple international championships and setting new milestones in the sport.
+         </P>
+         <p>
+         These records highlight the precision, skill, and mental focus required to excel in billiards at the highest level.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Statistics / Records -->
+<!-- Countries That Play This Game -->
+<div class="container my-5" data-aos="fade-up">
+  <div class="card bg-dark text-white border-warning shadow-lg">
+    <div class="card-body text-center">
+      <h2 class="display-5 fw-bold text-warning mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+        🌍 Countries That Play Badminton
+      </h2>
+      <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="Pakistan.jpg" class="card-img-top rounded" alt="Brazil Flag">
+            <div class="card-body">
+              <h5 class="card-title">Pakistan </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="France.jpg" class="card-img-top rounded" alt="France Flag">
+            <div class="card-body">
+              <h5 class="card-title">France</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="china.jpeg" class="card-img-top rounded" alt="Germany Flag">
+            <div class="card-body">
+              <h5 class="card-title">China</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="Thailand.jpg" class="card-img-top rounded" alt="Argentina Flag">
+            <div class="card-body">
+              <h5 class="card-title">Thailand </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Countries That Play This Game -->
+<!-- Famous Famous Billiards Players -->
+<div class="container mt-5">
+  <h2 class="text-center text-warning mb-4">🎱 Famous Billiards Players</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#reyesModal" style="cursor:pointer;">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.Knk8rYpvQdhRjFKxk6XsVAHaE7&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;" alt="Efren Reyes">
+        <div class="card-body">
+          <h5 class="card-title">Efren Reyes</h5>
+          <p class="card-text">Legendary Player | Philippines</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#ronnieModal" style="cursor:pointer;">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.zXPF8vfkxyZm2cuNi95I7wHaEK&pid=Api&P=0&h=220" class="card-img-top"style="width: 100%; height: 250px; object-fit: cover;" alt="Ronnie O'Sullivan">
+        <div class="card-body">
+          <h5 class="card-title">Ronnie O'Sullivan</h5>
+          <p class="card-text">World Champion | England</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#advaniModal" style="cursor:pointer;">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.GqqTqvhnordcWs9IvDLmQwHaFj&pid=Api&P=0&h=220"class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;"alt="Pankaj Advani">
+        <div class="card-body">
+          <h5 class="card-title">Pankaj Advani</h5>
+          <p class="card-text">World Title Holder | India</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="modal fade" id="reyesModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.Knk8rYpvQdhRjFKxk6XsVAHaE7&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"class="img-fluid rounded" alt="Efren Reyes">
+      <h4 class="mt-3">Efren Reyes</h4>
+      <p><strong>Country:</strong> Philippines</p>
+      <p><strong>Date of Birth:</strong> August 26, 1954</p>
+      <p><strong>Nickname:</strong> The Magician</p>
+      <p><strong>Achievements:</strong> Over 100 International Titles, World Nine-ball & Eight-ball Champion</p>
+      <p><strong>Style:</strong> Creative Shots, Tactical Genius</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="ronnieModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.zXPF8vfkxyZm2cuNi95I7wHaEK&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"class="img-fluid rounded" alt="Ronnie O'Sullivan">
+      <h4 class="mt-3">Ronnie O'Sullivan</h4>
+      <p><strong>Country:</strong> England</p>
+      <p><strong>Date of Birth:</strong> December 5, 1975</p>
+      <p><strong>Nickname:</strong> The Rocket</p>
+      <p><strong>Achievements:</strong> 7x World Snooker Champion, Fastest 147 Break</p>
+      <p><strong>Style:</strong> Fast, Fearless, Unpredictable</p>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="advaniModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.GqqTqvhnordcWs9IvDLmQwHaFj&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"class="img-fluid rounded" alt="Pankaj Advani">
+      <h4 class="mt-3">Pankaj Advani</h4>
+      <p><strong>Country:</strong> India</p>
+      <p><strong>Date of Birth:</strong> July 24, 1985</p>
+      <p><strong>Nickname:</strong> The Golden Boy</p>
+      <p><strong>Achievements:</strong> 25x World Billiards & Snooker Champion</p>
+      <p><strong>Style:</strong> Precision Play, Calm Control</p>
+    </div>
+  </div>
+</div>
+<!-- End famous Billiards player  -->
+
+</section>
+    
+    <!--  Start Footer -->
+   <footer style="background: url('Billiards 1.jpeg') no-repeat center center/cover; background-color: #111; color: white; padding-top: 40px; padding-bottom: 20px; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.8); z-index: 1;"></div>
+
+  <div class="container-fluid" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <span class="text-warning"  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" style="font-size: 28px; font-weight: bold;">Sportsinfo</span>
+        <span style="font-size: 28px; font-weight: bold; color: white;">.com</span>
+        <p>Your hub for every game, every goal, every glory.</p>
+        <div>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-facebook"></i></a>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 20px; transition: transform 0.3s;"> <i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-weight: bold; margin-bottom: 20px;">Quick Links</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Home</a></li>
+          <li><a href="about.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">About Us</a></li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Contact</a></li>
+          <li><a href="guestbook.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Guestbook</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" style="font-weight: bold; margin-bottom: 20px;">Popular Sports</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="football.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Football</a></li>
+          <li><a href="Basketball.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Basketball</a></li>
+          <li><a href="Tennis.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Tennis</a></li>
+          <li><a href="Golf.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Golf</a></li>
+          <li><a href="Motorcycle Racing.html" style="color: white; text-decoration: none;">Motorcycle Racing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" style="font-weight: bold; margin-bottom: 20px;">Contact Info</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px;"><i class="bi bi-geo-alt-fill me-2"></i> 123 Sports Ave, Infocity</li>
+          <li style="margin-bottom: 8px;"><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> info@sportsinfo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0;">
+
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+       <p style="margin: 0;">&copy; 2025 SportsInfo.com — Your Game, Our Passion.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p style="margin: 0;">A product of <a href="#" style="color: white; text-decoration: underline;">Infocom Corporation</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+      <!-- End Footer Section -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         
+         AOS.init();
+          document.getElementById("sportSearch").addEventListener("change", function () {
+          var selected = this.value;
+          if (selected) {
+          window.location.href = selected;
+         }
+       });
+      </script>
+    
+</body>
+</html>

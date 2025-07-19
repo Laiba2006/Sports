@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportsinfo.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    
+</head>
+<body>
+    <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="Index.html" style="text-decoration: none;">
+      <img src="https://img.icons8.com/ios-filled/50/FA5252/tennis-ball.png" alt="Tennis Ball Icon" />
+      <span style="margin-left: 8px; display: flex; align-items: center; cursor: pointer; transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.1)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        <span style="color: #FFA500; font-weight: bold; font-size: 2rem; letter-spacing: 1px; text-transform: uppercase;">
+          Sportsinfo
+        </span>
+        <span style="color: #ffffff; font-size: 2rem; font-weight: 600;">
+          .com
+        </span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sports
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="sportsDropdown">
+            <li><a class="dropdown-item" href="football.html">Football</a></li>
+            <li><a class="dropdown-item" href="Tennis.html">Tennis</a></li>
+            <li><a class="dropdown-item" href="Judo.html">Judo</a></li>
+            <li><a class="dropdown-item" href="Motorcycle Racing.html">Motorcycle Racing</a></li>
+            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+            <li><a class="dropdown-item" href="Golf.html">Golf</a></li>
+            <li><a class="dropdown-item" href="Chess.html">Chess</a></li>
+            <li><a class="dropdown-item" href="Billiards.html">Billiards</a></li>
+            <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
+            <li><a class="dropdown-item" href="Swimming.html">Swimming</a></li>
+            <li><a class="dropdown-item" href="Athletics.html">Athletics</a></li>
+            <li><a class="dropdown-item" href="Basketball.html">Basketball</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Guestbook.html">Guestbook</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3" role="search">
+        <select id="sportSearch" class="form-select select2" aria-label="Search Sports">
+          <option value="">Search Sports...</option>
+          <option value="football.html">Football</option>
+          <option value="Tennis.html">Tennis</option>
+          <option value="Judo.html">Judo</option>
+          <option value="Motorcycle Racing.html">Motorcycle Racing</option>
+          <option value="volleyball.html">Volleyball</option>
+          <option value="Golf.html">Golf</option>
+          <option value="Chess.html">Chess</option>
+          <option value="Billiards.html">Billiards</option>
+          <option value="Badminton.html">Badminton</option>
+          <option value="Swimming.html">Swimming</option>
+          <option value="Athletics.html">Athletics</option>
+          <option value="Basketball.html">Basketball</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</nav>
+      <!--End Navbar-->
+    <!-- Hero section -->
+<header class="hero-section text-white d-flex flex-column align-items-center justify-content-center position-relative" data-aos="fade-up" style="height: 100vh; overflow: hidden;">
+
+  <div id="sportsCarousel" class="carousel slide w-100 h-100 position-absolute top-0 start-0" data-bs-ride="carousel" style="z-index: 0;">
+    <div class="carousel-inner h-100">
+      <div class="carousel-item active h-100">
+        <img src="Football.webp" class="d-block w-100 h-100 object-fit-cover" alt="Football">
+      </div>
+      <div class="carousel-item h-100">
+        <img src="golf.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Golf">
+      </div>
+      <div class="carousel-item h-100">
+        <img src="Tennis.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Tennis">
+      </div>
+      <div class="carousel-item h-100">
+        <img src="Chess.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Chess">
+      </div>
+    </div>
+  </div>
+
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+
+  <div class="text-center position-relative text-white" style="z-index: 2;">
+    <h1 style="font-size: 3.5rem; line-height: 1.3; font-style: italic; margin-bottom: 20px;" data-aos="zoom-in" data-aos-delay="300">
+    Laiba<br>
+      <span style="font-weight: bold; font-size: 4.2rem; letter-spacing: 2px; color: #FFA500; text-transform: uppercase;">
+        Sportsinfo.com
+      </span>
+    </h1>
+
+    <p style="font-size: 1.2rem; max-width: 600px; color: #ddd; margin: 0 auto;" data-aos="fade-up" data-aos-delay="600">
+      Your ultimate destination for all things sports – news, facts, and action in one place!
+    </p>
+
+    <a href="Index.html" class="btn mt-4" style="background-color: #FFA500; color: #000; font-weight: bold; border-radius: 8px; font-size: 1.1rem;" data-aos="fade-right">
+      Explore Now
+    </a>
+  </div>
+
+</header>
+
+      <!--End Hero section -->
+       <!-- Start Game card slider-->
+       
+       <section class="popular-sports-section py-5 text-center"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://tse3.mm.bing.net/th?id=OIP.REeJ8K0gDQpYTCKTMZj9sAHaE2&pid=Api&P=0&h=220');  background-repeat: no-repeat;  background-size: cover;  background-position: center;  position: relative;">
+        <div class="container">
+          <h2 class="text-white fw-bold display-5 mb-4">POPULAR<span style="color: #ffc107;"> SPORTS</span></h2>
+          <p class="text-white fs-5">Explore the most thrilling and loved sports around the world.</p>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+      
+           
+            <div class="carousel-item active">
+              <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+                 
+                  <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg  h-100 " style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="Football1.jpeg" class="card-img-top" alt="Football"  style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center" >
+                        <h5 class="fw-bold text-warning">Football</h5>
+                        <p class="text-white">Football is a team sport played by kicking a ball to score goals opposing team.</p>
+                        <a href="football.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg h-100" style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="Badmintan.jpeg" class="card-img-top" alt="Badminton" style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center">
+                        <h5 class="fw-bold text-warning">Badminton</h5>
+                        <p class="text-white">Badminton is played by hitting a shuttlecock over a net using rackets to score points.</p>
+                        <a href="Badminton.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg  h-100" style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="Tennis1.jpeg" class="card-img-top" alt="Tennis" style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center">
+                        <h5 class="fw-bold text-warning">Tennis</h5>
+                        <p class="text-white">It can be played between two or four players on a court divided by a net.</p>
+                        <a href="Tennis.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg h-100 " style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="Basketball.jpeg" class="card-img-top" alt="Basketball"  style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center">
+                        <h5 class="fw-bold text-warning">Basketball</h5>
+                        <p class="text-white">Basketball is a game where players try to score by throwing a ball into a high hoop.</p>
+                        <a href="Basketball.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+           
+            <div class="carousel-item">
+              <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+                  <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg h-100 " style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="Judo.jpeg" class="card-img-top" alt="Judo" style="height: 220px; object-fit: cover;"/>
+                      <div class="card-body text-center">
+                        <h5 class="fw-bold text-warning">Judo</h5>
+                        <p class="text-white">Judo is a modern martial arts sport that involves throwing and techniques to defeat an opponent.</p>
+                        <a href="Judo.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg h-100 " style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="Motorcycle Racing.jpeg" class="card-img-top" alt="Motorcycle Racing" style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center">
+                        <h5 class="fw-bold text-warning">Motorcycle Racing</h5>
+                        <p class="text-white">Motorcycle racing is a sport where riders compete at high speeds on motorcycles to finish first.</p>
+                        <a href="Motorcycle Racing.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg h-100 " style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="athltic.jpeg" class="card-img-top" alt="Athletics" style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center">
+                        <h5 class="fw-bold text-warning">Athletics</h5>
+                        <p class="text-white">Athletics includes running, jumping, and throwing. It tests speed and strength.</p>
+                        <a href="Athletics.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg h-100 " style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="valleyball.jpeg" class="card-img-top" alt="Volleyball" style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center">
+                        <h5 class="fw-bold text-warning">Volleyball</h5>
+                        <p class="text-white">Volleyball is a game where two teams hit a ball over a net, trying to make it land on the other side.</p>
+                        <a href="volleyball.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          
+            <div class="carousel-item">
+              <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+                  <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg h-100 " style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="Golf1.jpeg" class="card-img-top" alt="Golf" style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center">
+                        <h5 class="fw-bold text-warning">Golf</h5>
+                        <p class="text-white">Golf is a precision sport where players use clubs to hit a ball into holes on a course with fewest strokes.</p>
+                        <a href="Golf.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg h-100 " style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="chess 1.jpeg" class="card-img-top" alt="Chess" style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center" >
+                        <h5 class="fw-bold text-warning">Chess</h5>
+                        <p class="text-white">Chess is a strategy game played on a square board where two players move pieces to checkmate the opponent’s king.</p>
+                        <a href="Chess.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg h-100" style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="Swimming.webp" class="card-img-top" alt="Swimming" style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center">
+                        <h5 class="fw-bold text-warning">Swimming</h5>
+                        <p class="text-white">Swimming is a water sport where individuals move through water using different strokes.</p>
+                        <a href="Swimming.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card bg-dark text-white border-warning shadow-lg h-100 " style="transition: 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                      <img src="Billiards.jpeg" class="card-img-top" alt="Billiards" style="height: 220px; object-fit: cover;" />
+                      <div class="card-body text-center">
+                        <h5 class="fw-bold text-warning">Billiards</h5>
+                        <p class="text-white">Billiards is an indoor game played on a table with balls and a cue stick. Players strike balls to score points.</p>
+                        <a href="Billiards.html" class="btn btn-primary">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+      </section>
+            <!-- End Game card Slider -->
+
+       <!-- Start Upcomming cards-->
+  <section class="bg-section  py-5 "  style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://tse3.mm.bing.net/th?id=OIP.gzpeEpwvsu__EuHu-XxH7wHaEB&pid=Api&P=0&h=220');  background-repeat: no-repeat;  background-size: cover;  background-position: center;  position: relative;">
+    <div class="bg-overlay text-white text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-3">UPCOMING<span> EVENTS</span></h2>
+        <p class="mb-5">
+          Stay updated with the most exciting upcoming sports events. Join us for thrilling matches, trending games, and the latest sports updates from around the world.
+        </p>
+
+        <div class="row text-center">
+        
+          <div class="col-md-3 mb-4">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body">
+                <div class="mb-2">
+                  <i class="bi bi-trophy-fill text-danger fs-1"></i>
+                </div>
+                <h5 class="card-title fw-bold">LATEST</h5>
+                <p><i class="bi bi-clock text-danger"></i> 28 April 2025</p>
+                <p>Football Championship Final in London Stadium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body">
+                <div class="mb-2">
+                  <i class="bi bi-trophy-fill text-danger fs-1"></i>
+                </div>
+                <h5 class="card-title fw-bold">POPULAR</h5>
+                <p><i class="bi bi-clock text-danger"></i> 29 April 2025</p>
+                <p>Cricket World Cup semi-final match highlights.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <div class="card bg-black text-white h-100">
+              <div class="card-body">
+                <div class="mb-2">
+                  <i class="bi bi-trophy-fill text-danger fs-1"></i>
+                </div>
+                <h5 class="card-title fw-bold">TRENDING</h5>
+                <p><i class="bi bi-clock text-danger"></i>  30 April 2025</p>
+                <p>International Tennis Open - Semi Final Clash.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <div class="card bg-black text-white">
+              <div class="card-body">
+                <div class="mb-2">
+                  <i class="bi bi-trophy-fill text-danger fs-1"></i>
+                </div>
+                <h5 class="card-title fw-bold">NEWEST</h5>
+                <p><i class="bi bi-clock text-danger"></i> 1 May 2025</p>
+                <p>New E-sports Arena Tournament Announced.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+      <!-- End Upcomming cards-->
+         <!--Start Newsletter Section -->
+   <section style="padding: 3rem 0; background: linear-gradient(135deg, #007bff, #0056b3); color: white;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+        <h3 style="font-weight: 700; margin-bottom: 1rem;">Subscribe to Our Newsletter</h3>
+        <p style="margin: 0;">Stay updated with the latest scores, news, and sports insights — directly in your inbox.</p>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+        <form class="row g-2 needs-validation" novalidate onsubmit="return validateEmail(this)">
+          <div class="col-md-8">
+            <input type="email" class="form-control" placeholder="Your Email Address" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" style="border-radius: 0.5rem;">
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-dark w-100" style="border-radius: 0.5rem;">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- End Newsletter Section -->
+  <!--  Start Footer -->
+  <footer style="background: url('Billiards 1.jpeg') no-repeat center center/cover; background-color: #111; color: white; padding-top: 40px; padding-bottom: 20px; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.8); z-index: 1;"></div>
+
+  <div class="container-fluid" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <span class="text-warning"  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" style="font-size: 28px; font-weight: bold;">Sportsinfo</span>
+        <span style="font-size: 28px; font-weight: bold; color: white;">.com</span>
+        <p>Your hub for every game, every goal, every glory.</p>
+        <div>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-facebook"></i></a>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 20px; transition: transform 0.3s;"> <i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-weight: bold; margin-bottom: 20px;">Quick Links</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Home</a></li>
+          <li><a href="about.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">About Us</a></li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Contact</a></li>
+          <li><a href="guestbook.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Guestbook</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" style="font-weight: bold; margin-bottom: 20px;">Popular Sports</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="football.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Football</a></li>
+          <li><a href="Basketball.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Basketball</a></li>
+          <li><a href="Tennis.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Tennis</a></li>
+          <li><a href="Golf.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Golf</a></li>
+          <li><a href="Motorcycle Racing.html" style="color: white; text-decoration: none;">Motorcycle Racing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" style="font-weight: bold; margin-bottom: 20px;">Contact Info</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px;"><i class="bi bi-geo-alt-fill me-2"></i> 123 Sports Ave, Infocity</li>
+          <li style="margin-bottom: 8px;"><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> info@sportsinfo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0;">
+
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+       <p style="margin: 0;">&copy; 2025 SportsInfo.com — Your Game, Our Passion.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p style="margin: 0;">A product of <a href="#" style="color: white; text-decoration: underline;">Infocom Corporation</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+      <!-- End Footer Section -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         
+         AOS.init();
+
+          document.getElementById("sportSearch").addEventListener("change", function () {
+          var selected = this.value;
+          if (selected) {
+          window.location.href = selected;
+         }
+       });
+
+       function validateEmail(form) {
+      const emailInput = form.querySelector('input[type="email"]');
+      const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!pattern.test(emailInput.value)) {
+      emailInput.classList.add("is-invalid");
+      return false;
+     } else {
+      emailInput.classList.remove("is-invalid");
+      return true;
+    }
+    }
+      </script>
+    
+</body>
+</html>

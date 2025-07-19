@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guestbook</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="asset/css/style.css">
+    
+</head>
+<body>
+     <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="Index.html" style="text-decoration: none;">
+      <img src="https://img.icons8.com/ios-filled/50/FA5252/tennis-ball.png" alt="Tennis Ball Icon" />
+      <span style="margin-left: 8px; display: flex; align-items: center; cursor: pointer; transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.1)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        <span style="color: #FFA500; font-weight: bold; font-size: 2rem; letter-spacing: 1px; text-transform: uppercase;">
+          Sportsinfo
+        </span>
+        <span style="color: #ffffff; font-size: 2rem; font-weight: 600;">
+          .com
+        </span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sports
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="sportsDropdown">
+            <li><a class="dropdown-item" href="football.html">Football</a></li>
+            <li><a class="dropdown-item" href="Tennis.html">Tennis</a></li>
+            <li><a class="dropdown-item" href="Judo.html">Judo</a></li>
+            <li><a class="dropdown-item" href="Motorcycle Racing.html">Motorcycle Racing</a></li>
+            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+            <li><a class="dropdown-item" href="Golf.html">Golf</a></li>
+            <li><a class="dropdown-item" href="Chess.html">Chess</a></li>
+            <li><a class="dropdown-item" href="Billiards.html">Billiards</a></li>
+            <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
+            <li><a class="dropdown-item" href="Swimming.html">Swimming</a></li>
+            <li><a class="dropdown-item" href="Athletics.html">Athletics</a></li>
+            <li><a class="dropdown-item" href="Basketball.html">Basketball</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Guestbook.html">Guestbook</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3" role="search">
+        <select id="sportSearch" class="form-select select2" aria-label="Search Sports">
+          <option value="">Search Sports...</option>
+          <option value="football.html">Football</option>
+          <option value="Tennis.html">Tennis</option>
+          <option value="Judo.html">Judo</option>
+          <option value="Motorcycle Racing.html">Motorcycle Racing</option>
+          <option value="volleyball.html">Volleyball</option>
+          <option value="Golf.html">Golf</option>
+          <option value="Chess.html">Chess</option>
+          <option value="Billiards.html">Billiards</option>
+          <option value="Badminton.html">Badminton</option>
+          <option value="Swimming.html">Swimming</option>
+          <option value="Athletics.html">Athletics</option>
+          <option value="Basketball.html">Basketball</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</nav>
+    <!--End Navbar-->
+    <!--Guest Book Section-->
+  <div  style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+      <div class="container card bg-dark text-white border-warning shadow-lg" style="max-width: 700px; margin-top: 40px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+    <h1 class="text-center text-warning">📖 Guest Book</h1>
+
+    <form id="guestForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" required>
+        <small id="nameError" class="text-danger d-none">Please enter a valid name.</small>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+        <small id="emailError" class="text-danger d-none">Enter a valid email address.</small>
+      </div>
+
+      <div class="mb-3">
+        <label for="date" class="form-label">Date of Visit</label>
+        <input type="date" class="form-control" id="date" required>
+        <small id="dateError" class="text-danger d-none">Please select a valid date.</small>
+      </div>
+
+      <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <textarea class="form-control" id="address" rows="2" required></textarea>
+        <small id="addressError" class="text-danger d-none">Address cannot be empty.</small>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
+        <small id="messageError" class="text-danger d-none">Please enter a message (min 5 characters).</small>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Will you recommend this site to others?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="recommend" id="recommendYes" value="Yes" required>
+          <label class="form-check-label" for="recommendYes">Yes</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="recommend" id="recommendNo" value="No" required>
+          <label class="form-check-label" for="recommendNo">No</label>
+        </div>
+        <small id="recommendError" class="text-danger d-none">Please choose an option.</small>
+      </div>
+
+      <div class="mb-3">
+        <label for="rating" class="form-label">Rate the site:</label>
+        <select class="form-select" id="rating" required>
+          <option value="">Select Rating</option>
+          <option value="1">1 - Excellent</option>
+          <option value="2">2 - Good</option>
+          <option value="3">3 - Average</option>
+          <option value="4">4 - Poor</option>
+        </select>
+        <small id="ratingError" class="text-danger d-none">Please select a rating.</small>
+      </div>
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Sign Guestbook</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="messages" style="max-width: 700px; margin: 50px auto;">
+    <h3 class="text-center text-warning mb-4">Guest Messages</h3>
+    <div id="messageList"></div>
+  </div>
+
+       
+  </div>
+  
+    <!-- End Guest Book Section-->
+     <!-- Footer -->
+   <footer style="background: url('Billiards 1.jpeg') no-repeat center center/cover; background-color: #111; color: white; padding-top: 40px; padding-bottom: 20px; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.8); z-index: 1;"></div>
+
+  <div class="container-fluid" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <span class="text-warning"  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" style="font-size: 28px; font-weight: bold;">Sportsinfo</span>
+        <span style="font-size: 28px; font-weight: bold; color: white;">.com</span>
+        <p>Your hub for every game, every goal, every glory.</p>
+        <div>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-facebook"></i></a>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 20px; transition: transform 0.3s;"> <i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-weight: bold; margin-bottom: 20px;">Quick Links</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Home</a></li>
+          <li><a href="about.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">About Us</a></li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Contact</a></li>
+          <li><a href="guestbook.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Guestbook</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" style="font-weight: bold; margin-bottom: 20px;">Popular Sports</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="football.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Football</a></li>
+          <li><a href="Basketball.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Basketball</a></li>
+          <li><a href="Tennis.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Tennis</a></li>
+          <li><a href="Golf.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Golf</a></li>
+          <li><a href="Motorcycle Racing.html" style="color: white; text-decoration: none;">Motorcycle Racing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" style="font-weight: bold; margin-bottom: 20px;">Contact Info</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px;"><i class="bi bi-geo-alt-fill me-2"></i> 123 Sports Ave, Infocity</li>
+          <li style="margin-bottom: 8px;"><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> info@sportsinfo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0;">
+
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+       <p style="margin: 0;">&copy; 2025 SportsInfo.com — Your Game, Our Passion.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p style="margin: 0;">A product of <a href="#" style="color: white; text-decoration: underline;">Infocom Corporation</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  const form = document.getElementById('guestForm');
+  const messageList = document.getElementById('messageList');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Get field values
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const date = document.getElementById('date').value;
+    const address = document.getElementById('address').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const recommend = document.querySelector('input[name="recommend"]:checked');
+    const rating = document.getElementById('rating').value;
+
+    let valid = true;
+
+    // Validation
+    const showError = (id, condition) => {
+      const el = document.getElementById(id);
+      if (!condition) {
+        el.classList.remove("d-none");
+        valid = false;
+      } else {
+        el.classList.add("d-none");
+      }
+    };
+
+    showError('nameError', /^[A-Za-z\s]{3,}$/.test(name));
+    showError('emailError', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email));
+    showError('dateError', date !== "");
+    showError('addressError', address.length > 0);
+    showError('messageError', message.length >= 5);
+    showError('recommendError', recommend !== null);
+    showError('ratingError', rating !== "");
+
+    if (!valid) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops!',
+        text: 'Please correct the errors in the form before submitting.'
+      });
+      return;
+    }
+
+    // SweetAlert Success Message
+    Swal.fire({
+      icon: 'success',
+      title: 'Thank You!',
+      html: `
+        <b>${name}</b>, your feedback has been submitted.<br>
+        <b>Date:</b> ${date}<br>
+        <b>Address:</b> ${address}<br>
+        <b>Recommend:</b> ${recommend.value}<br>
+        <b>Rating:</b> ${rating}<br>
+        <b>Message:</b> ${message}
+      `
+    });
+
+    // Display in message section
+    const entry = document.createElement('div');
+    entry.classList.add('card', 'mb-3');
+    entry.innerHTML = `
+      <div class="card-body">
+        <h5 class="card-title">${name}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">${email} | Visit: ${date}</h6>
+        <p class="card-text"><strong>Address:</strong> ${address}</p>
+        <p class="card-text"><strong>Message:</strong> ${message}</p>
+        <p class="card-text"><strong>Recommended:</strong> ${recommend.value} | <strong>Rating:</strong> ${rating}</p>
+      </div>
+    `;
+    messageList.prepend(entry);
+
+    form.reset();
+  });
+
+  AOS.init();
+
+   document.getElementById("sportSearch").addEventListener("change", function () {
+          var selected = this.value;
+          if (selected) {
+          window.location.href = selected;
+         }
+       });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf.info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    
+</head>
+<body>
+    <!-- Start Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="Index.html" style="text-decoration: none;">
+      <img src="https://img.icons8.com/ios-filled/50/FA5252/tennis-ball.png" alt="Tennis Ball Icon" />
+      <span style="margin-left: 8px; display: flex; align-items: center; cursor: pointer; transition: transform 0.3s;"
+            onmouseover="this.style.transform='scale(1.1)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        <span style="color: #FFA500; font-weight: bold; font-size: 2rem; letter-spacing: 1px; text-transform: uppercase;">
+          Sportsinfo
+        </span>
+        <span style="color: #ffffff; font-size: 2rem; font-weight: 600;">
+          .com
+        </span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sports
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="sportsDropdown">
+            <li><a class="dropdown-item" href="football.html">Football</a></li>
+            <li><a class="dropdown-item" href="Tennis.html">Tennis</a></li>
+            <li><a class="dropdown-item" href="Judo.html">Judo</a></li>
+            <li><a class="dropdown-item" href="Motorcycle Racing.html">Motorcycle Racing</a></li>
+            <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+            <li><a class="dropdown-item" href="Golf.html">Golf</a></li>
+            <li><a class="dropdown-item" href="Chess.html">Chess</a></li>
+            <li><a class="dropdown-item" href="Billiards.html">Billiards</a></li>
+            <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
+            <li><a class="dropdown-item" href="Swimming.html">Swimming</a></li>
+            <li><a class="dropdown-item" href="Athletics.html">Athletics</a></li>
+            <li><a class="dropdown-item" href="Basketball.html">Basketball</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Guestbook.html">Guestbook</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3" role="search">
+        <select id="sportSearch" class="form-select select2" aria-label="Search Sports">
+          <option value="">Search Sports...</option>
+          <option value="football.html">Football</option>
+          <option value="Tennis.html">Tennis</option>
+          <option value="Judo.html">Judo</option>
+          <option value="Motorcycle Racing.html">Motorcycle Racing</option>
+          <option value="volleyball.html">Volleyball</option>
+          <option value="Golf.html">Golf</option>
+          <option value="Chess.html">Chess</option>
+          <option value="Billiards.html">Billiards</option>
+          <option value="Badminton.html">Badminton</option>
+          <option value="Swimming.html">Swimming</option>
+          <option value="Athletics.html">Athletics</option>
+          <option value="Basketball.html">Basketball</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</nav>
+      <!--End Navbar-->
+      <!-- hero-section--> 
+      <header class="hero-section text-white d-flex align-items-center justify-content-center position-relative"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Golf 1.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;"
+  data-aos="fade-up" data-aos-duration="1500">
+
+  <h1 style="font-size: 3.5rem; color: #fff; line-height: 1.3; font-style: italic; margin-bottom: 20px;" data-aos="zoom-in" data-aos-delay="300">
+    Welcome to the<br>
+    <span style="font-weight: bold; font-size: 4.2rem; letter-spacing: 2px; color: #FFA500; text-transform: uppercase;">
+    Golf World
+    </span>
+  </h1>
+
+  <p style="font-size: 1.2rem; max-width: 600px; color: #ddd;" data-aos="fade-up" data-aos-delay="600">
+    Golf is a sport where players hit a small ball into a series of holes using clubs, aiming for the fewest strokes possible.
+  </p>
+
+  <a href="Golf.html" style="margin-top: 30px; padding: 12px 30px; background-color: #FFA500; color: #000; font-weight: bold; border-radius: 8px; font-size: 1.1rem;" data-aos="fade-up" data-aos-delay="900">
+    Explore Now
+  </a>
+
+   </header>
+<!--End hero-section--> 
+<!--Introduction-->
+<section style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">  
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Golf
+      </h2>
+      <p class="mt-3 fs-5">Golf is a precision sport played outdoors, where players aim to get a ball into each hole in the fewest number of shots.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">Introduction of Golf</h3>
+        <p>Golf is an outdoor sport played on a large course, where players use clubs to hit a small ball into a series of holes in as few strokes as possible. It is known for its calm atmosphere, strategic play, and beautiful landscapes.</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="http://www.pngall.com/wp-content/uploads/2/Golf-PNG-Download-Image.png" class="img-fluid" alt="Golf Player" style="max-height: 300px;">
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <h3 class="text-warning">How Many Players Play the Game?</h3>
+        <p>
+          Golf is usually played by 1 to 4 players in a group, but professional tournaments can include hundreds of individual players competing separately.
+        </p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://www.pngarts.com/files/2/Golf-Ball-PNG-Transparent-Image.png" class="img-fluid" alt=" Golf" style="max-height: 300px;">
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-right">
+      <h3 class="text-warning">Is it a team game?</h3>
+      <p>Golf is primarily an individual sport, but it can also be played in teams during special formats like Ryder Cup or team tournaments, where combined scores matter.</p>
+    </div>
+    <!-- End Introduction-->
+    <!-- Strategies -->
+    <div class="my-5 text-center" data-aos="fade-up">
+      <h2 class="display-4 fw-bold d-inline-block" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+        Strategies of the Game
+      </h2>
+    </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🧠Course Management</h5>
+              <p class="card-text">
+               Plan each shot by considering the layout, hazards, and wind to avoid risky areas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🏌️‍♂️Club Selection </h5>
+              <p class="card-text">
+              Choose the right club for each distance and shot type—drivers for long shots, irons for accuracy, putters for short strokes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🧘Stay Mentally Focused</h5>
+              <p class="card-text">
+              Keep calm and focused during each shot to maintain consistency and avoid frustration.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white h-100 border-warning">
+            <div class="card-body">
+              <h5 class="card-title text-warning">🎯 Practice the Short Game</h5>
+              <p class="card-text">
+            Spend more time on chipping and putting, as most strokes are made near the green.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--End Strategies -->
+    <!--Rules -->
+    <div class="container my-5 card bg-dark text-white border-warning shadow-lg" data-aos="flip-left">
+        <div class="card-body px-4 px-md-5">
+          <div class="my-4 text-center" data-aos="fade-up">
+            <h2 class="display-4 fw-bold d-inline-block"
+                style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+              Rule of the game
+            </h2>
+          </div>
+          <div class="mx-auto" style="max-width: 800px;">
+            <h4 class="text-warning">Play the Ball as It Lies</h4>
+           <p>
+             You must play the ball from where it lands—no moving or touching it (unless allowed by specific rules).
+           </p>
+          </div>
+            <div class="mx-auto" style="max-width: 800px;">
+              <h4 class="text-warning">Tee Off Within the Tee Box</h4>
+              <p>
+              Every hole starts from a designated tee area; your ball must be teed between and not in front of the markers.
+             </p>
+              </div>
+              <div class="mx-auto" style="max-width: 800px;">
+                <h4 class="text-warning">Count Every Stroke</h4>
+                <p>Each swing made with the intent to hit the ball counts as a stroke, including penalty strokes</p>
+             </div>
+                <div class="mx-auto" style="max-width: 800px;">
+                  <h4 class="text-warning">Out of Bounds & Penalties</h4>
+                  <p>If your ball goes out of bounds or into water, you take a penalty stroke and drop a new ball.</p>
+              </div>
+                  <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">Putting on the Green</h4>
+                    <p>Once on the green, players use a putter to gently roll the ball into the hole.</p>
+                  </div>
+                   <div class="mx-auto" style="max-width: 800px;">
+                    <h4 class="text-warning">Honesty & Etiquette</h4>
+                    <p>Golf relies on player honesty for scoring and respect for others by keeping quiet and not distracting during shots.</p>
+                 
+                </div>
+         </div>
+    </div>
+    <!-- End Rules -->
+    <!-- Important Facts-->
+<div style="background: linear-gradient(to right, #141e30, #243b55); padding: 60px 0;">
+  <div class="container text-white">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold" style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 10px;">
+        Important Facts About Golf
+      </h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Ancient Origins</h5>
+           <p>
+              Golf originated in Scotland during the 15th century and is now played worldwide.
+           </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">18-Hole Standard</h5>
+           <p>A full round of golf usually consists of 18 holes, though 9-hole courses are also common.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">No Standard Playing Field</h5>
+            <p>
+             Unlike other sports, every golf course is different, with unique layouts, lengths, and obstacles.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">The Ball is Not Moved</h5>
+            <p>
+            Golf is one of the few sports where the ball is not moved by an opponent—only the player's own shots count.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Olympic Sport</h5>
+            <p>
+              Golf was reintroduced into the Olympic Games in 2016 after being absent for over a century.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-6" data-aos="fade-left">
+        <div class="card bg-dark text-white border-warning shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Popular Global Sport</h5>
+            <p>
+              Golf is played by millions of people around the world, both professionally and recreationally.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ <!-- End Important Facts-->
+
+<!-- Statistics / Records -->
+<div class="container my-5" data-aos="zoom-in">
+  <div class="card bg-dark border-warning shadow-lg">
+    <div class="card-body px-4 px-md-5">
+      <div class="my-4 text-center">
+        <h2 class="display-4 fw-bold d-inline-block"
+            style="color: #ffcc00; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); border-bottom: 3px solid #ffcc00; padding-bottom: 10px;">
+          Statistics / Records
+        </h2>
+      </div>
+      <div class="mx-auto text-white" style="max-width: 800px;">
+        <h4 class="text-warning">Lowest Score in a Major Tournament</h4>
+       <p>
+      Cameron Smith scored -20 to win The Open Championship in 2022, tying the record for lowest score in a major.
+       </p>
+      </div>
+        <div class="mx-auto text-white " style="max-width: 800px;">
+          <h4 class="text-warning">Most Major Wins</h4>
+          <p>
+            Jack Nicklaus holds the record for 18 major championships, the most in golf history.
+         </p>
+          </div>
+          <div class="mx-auto text-white" style="max-width: 800px;">
+            <h4 class="text-warning">Youngest PGA Tour Winner</h4>
+            <p>
+               Jordan Spieth won a PGA Tour event at just 19 years old.
+            </p>
+            </div>
+            <div class="mx-auto text-white" style="max-width: 800px;">
+              <h4 class="text-warning">Fastest Round of Golf</h4>
+              <p>
+               The fastest 18-hole round (solo) was played in 29 minutes, 33 seconds by James Carvill in 2021.
+              </p> 
+             </div>
+              <div class="mx-auto text-white" style="max-width: 800px;">
+                <h4 class="text-warning">Longest Drive Ever Recorded</h4>
+                <p>
+                  Mike Austin hit a drive of 515 yards in 1974—a record still unmatched in regular play.
+                </p>
+              </div>
+              <div class="mx-auto text-white" style="max-width: 800px;">
+                <h4 class="text-warning">Most Holes-in-One in a Career</h4>
+                <p>
+                 Mancil Davis, known as “The King of Aces,” made 51 holes-in-one during his career.
+                </p> 
+              </div>
+      </div>
+   </div>
+</div>
+<!-- End Statistics / Records -->
+<!-- Countries That Play This Game -->
+<div class="container my-5" data-aos="fade-up">
+  <div class="card bg-dark text-white border-warning shadow-lg">
+    <div class="card-body text-center">
+      <h2 class="display-5 fw-bold text-warning mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+        🌍 Countries That Play Golf
+      </h2>
+      <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="South Korea.jpg" class="card-img-top rounded" alt="Brazil Flag">
+            <div class="card-body">
+              <h5 class="card-title">South Korea</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="United States.jpeg" class="card-img-top rounded" alt="France Flag">
+            <div class="card-body">
+              <h5 class="card-title">United States</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="china.jpeg" class="card-img-top rounded" alt="Germany Flag">
+            <div class="card-body">
+              <h5 class="card-title">China</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-transparent border-0 text-white">
+            <img src="Canada.jpg" class="card-img-top rounded" alt="Argentina Flag">
+            <div class="card-body">
+              <h5 class="card-title">Canada </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- End Countries That Play This Game -->
+<!-- Famous Golf Players -->
+<div class="container mt-5">
+  <h2 class="text-center text-warning mb-4">⛳ Famous Golf Players</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#woodsModal" style="cursor:pointer;">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.ghTSGYDKUODVdJLq6suflAHaEK&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;" alt="Tiger Woods">
+        <div class="card-body">
+          <h5 class="card-title">Tiger Woods</h5>
+          <p class="card-text">15x Major Champion | USA</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#nicklausModal" style="cursor:pointer;">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.iFBD_IgZvpqEPMPt5FZQkgHaEK&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;" alt="Jack Nicklaus">
+        <div class="card-body">
+          <h5 class="card-title">Jack Nicklaus</h5>
+          <p class="card-text">Record 18 Majors | USA</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark text-white border-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#mcilroyModal" style="cursor:pointer;">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.9B-99HcahPbGfCcxDPlDGwHaFV&pid=Api&P=0&h=220" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover;"alt="Rory McIlroy">
+        <div class="card-body">
+          <h5 class="card-title">Rory McIlroy</h5>
+          <p class="card-text">Multiple Major Wins | Northern Ireland</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="modal fade" id="woodsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.ghTSGYDKUODVdJLq6suflAHaEK&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"class="img-fluid rounded" alt="Tiger Woods">
+      <h4 class="mt-3">Tiger Woods</h4>
+      <p><strong>Country:</strong> United States</p>
+      <p><strong>Date of Birth:</strong> December 30, 1975</p>
+      <p><strong>Major Wins:</strong> 15</p>
+      <p><strong>PGA Tour Wins:</strong> 82 (Tied all-time record)</p>
+      <p><strong>Achievements:</strong> 5x Masters Champion, 3x U.S. Open</p>
+      <p><strong>Style:</strong> Mental Toughness, Powerful Drives, Clutch Putter</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="nicklausModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.iFBD_IgZvpqEPMPt5FZQkgHaEK&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"class="img-fluid rounded" alt="Jack Nicklaus">
+      <h4 class="mt-3">Jack Nicklaus</h4>
+      <p><strong>Country:</strong> United States</p>
+      <p><strong>Date of Birth:</strong> January 21, 1940</p>
+      <p><strong>Major Wins:</strong> 18 (Record)</p>
+      <p><strong>PGA Tour Wins:</strong> 73</p>
+      <p><strong>Nicknamed:</strong> "The Golden Bear"</p>
+      <p><strong>Style:</strong> Strategic Course Management, Consistency</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="mcilroyModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="card bg-dark text-white border-warning shadow-lg modal-content p-3">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.9B-99HcahPbGfCcxDPlDGwHaFV&pid=Api&P=0&h=220" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;"class="img-fluid rounded" alt="Rory McIlroy">
+      <h4 class="mt-3">Rory McIlroy</h4>
+      <p><strong>Country:</strong> Northern Ireland</p>
+      <p><strong>Date of Birth:</strong> May 4, 1989</p>
+      <p><strong>Major Wins:</strong> 4 (U.S. Open, PGA Championship x2, Open Championship)</p>
+      <p><strong>Achievements:</strong> FedEx Cup Champion, World #1</p>
+      <p><strong>Style:</strong> Long Drives, Athleticism, Modern Swing</p>
+    </div>
+  </div>
+</div>
+<!-- End Famous Golf Players -->
+
+</section>
+   
+    <!--  Start Footer -->
+  <footer style="background: url('Billiards 1.jpeg') no-repeat center center/cover; background-color: #111; color: white; padding-top: 40px; padding-bottom: 20px; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.8); z-index: 1;"></div>
+
+  <div class="container-fluid" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <span class="text-warning"  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" style="font-size: 28px; font-weight: bold;">Sportsinfo</span>
+        <span style="font-size: 28px; font-weight: bold; color: white;">.com</span>
+        <p>Your hub for every game, every goal, every glory.</p>
+        <div>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-facebook"></i></a>
+          <a href="#" style="color: white; font-size: 20px; margin-right: 15px; transition: transform 0.3s;"> <i class="bi bi-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 20px; transition: transform 0.3s;"> <i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-weight: bold; margin-bottom: 20px;">Quick Links</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Home</a></li>
+          <li><a href="about.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">About Us</a></li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Contact</a></li>
+          <li><a href="guestbook.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Guestbook</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" style="font-weight: bold; margin-bottom: 20px;">Popular Sports</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="football.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Football</a></li>
+          <li><a href="Basketball.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Basketball</a></li>
+          <li><a href="Tennis.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Tennis</a></li>
+          <li><a href="Golf.html" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">Golf</a></li>
+          <li><a href="Motorcycle Racing.html" style="color: white; text-decoration: none;">Motorcycle Racing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" style="font-weight: bold; margin-bottom: 20px;">Contact Info</h5>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px;"><i class="bi bi-geo-alt-fill me-2"></i> 123 Sports Ave, Infocity</li>
+          <li style="margin-bottom: 8px;"><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> info@sportsinfo.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0;">
+
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+       <p style="margin: 0;">&copy; 2025 SportsInfo.com — Your Game, Our Passion.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p style="margin: 0;">A product of <a href="#" style="color: white; text-decoration: underline;">Infocom Corporation</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+      <!-- End Footer Section -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         
+         AOS.init();
+          document.getElementById("sportSearch").addEventListener("change", function () {
+          var selected = this.value;
+          if (selected) {
+          window.location.href = selected;
+         }
+       });
+      </script>
+    
+</body>
+</html>
